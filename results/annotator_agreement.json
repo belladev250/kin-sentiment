@@ -1,0 +1,14 @@
+{
+  "tweets_annotated": 6001,
+  "raw_label_counts": {
+    "NEUTRAL": 6338,
+    "NEGATIVE": 4919,
+    "POSITIVE": 4587,
+    "MIXED": 1567,
+    "INDETERMINATE": 466
+  },
+  "tweets_with_3_pos_neu_neg_labels": 4284,
+  "unanimous_fraction": 0.358,
+  "majority_exists_fraction": 0.939,
+  "fleiss_kappa": 0.318
+}

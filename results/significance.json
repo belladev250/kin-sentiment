@@ -1,0 +1,33 @@
+{
+  "E1 (baseline)": {
+    "macro_f1": 0.5788,
+    "ci95": [
+      0.5478,
+      0.6096
+    ]
+  },
+  "E6 (best classical)": {
+    "macro_f1": 0.6232,
+    "ci95": [
+      0.5935,
+      0.6528
+    ],
+    "mcnemar_vs_baseline": {
+      "baseline_right_model_wrong": 56,
+      "baseline_wrong_model_right": 103,
+      "p_value": 0.00024
+    }
+  },
+  "N2 (BiLSTM+attn, best seed)": {
+    "macro_f1": 0.5672,
+    "ci95": [
+      0.5359,
+      0.5959
+    ],
+    "mcnemar_vs_baseline": {
+      "baseline_right_model_wrong": 113,
+      "baseline_wrong_model_right": 104,
+      "p_value": 0.58718
+    }
+  }
+}

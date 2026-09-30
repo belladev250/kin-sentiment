@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+models/best_transformer/
+.ipynb_checkpoints/

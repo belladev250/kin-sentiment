@@ -1,0 +1,10 @@
+scikit-learn==1.8.0
+numpy>=2.0
+pandas>=2.2
+joblib>=1.4
+matplotlib>=3.8
+torch>=2.2
+transformers>=4.46
+datasets>=2.20
+accelerate>=0.30
+gradio>=4.44

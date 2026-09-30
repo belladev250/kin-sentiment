@@ -1,0 +1,33 @@
+{
+  "best_model": "E6",
+  "test_size": 1026,
+  "errors": 390,
+  "acc_short_true": 0.5676,
+  "acc_short_false": 0.6239,
+  "n_short_true": 74,
+  "acc_has_emoji_true": 0.6579,
+  "acc_has_emoji_false": 0.6039,
+  "n_has_emoji_true": 304,
+  "acc_code_switch_true": 0.5983,
+  "acc_code_switch_false": 0.6227,
+  "n_code_switch_true": 117,
+  "acc_question_true": 0.5556,
+  "acc_question_false": 0.6336,
+  "n_question_true": 180,
+  "acc_oov_<=10%": 0.6605,
+  "n_oov_<=10%": 162,
+  "acc_oov_10-30%": 0.6395,
+  "n_oov_10-30%": 516,
+  "acc_oov_>30%": 0.5718,
+  "n_oov_>30%": 348,
+  "confusions": {
+    "neutral->negative": 114,
+    "negative->neutral": 86,
+    "neutral->positive": 67,
+    "positive->neutral": 55,
+    "positive->negative": 39,
+    "negative->positive": 29
+  },
+  "fixed_by_best": 103,
+  "broken_by_best": 56
+}

@@ -1,0 +1,11 @@
+Best classical model E6 on TEST
+
+              precision    recall  f1-score   support
+
+    negative      0.611     0.676     0.642       355
+     neutral      0.601     0.539     0.568       393
+    positive      0.657     0.662     0.659       278
+
+    accuracy                          0.620      1026
+   macro avg      0.623     0.626     0.623      1026
+weighted avg      0.619     0.620     0.618      1026
