@@ -5,6 +5,7 @@ colorFrom: blue
 colorTo: green
 sdk: gradio
 app_file: app.py
+python_version: "3.11"
 pinned: false
 license: cc-by-4.0
 ---
@@ -14,8 +15,9 @@ license: cc-by-4.0
 Classifies Kinyarwanda text as positive / neutral / negative.
 Trained on AfriSenti-Kinyarwanda (Muhammad et al., 2023, CC BY 4.0).
 
-Default model: TF-IDF word + character n-grams with a Linear SVM (`best_classical.joblib`).
-To serve the fine-tuned Transformer instead, add a Space variable `MODEL_ID=<your-hf-username>/<model-repo>`
-and uncomment `torch` and `transformers` in `requirements.txt`.
+Default model: fine-tuned AfroXLMR-base (T3), loaded from the Hugging Face Hub
+(`bellahug3/kin-sentiment-transformer`). If it cannot be loaded, or the Space variable
+`MODEL_ID=classical` is set, the app uses the TF-IDF word + character n-gram Linear SVM
+(`best_classical.joblib`) instead.
 
-Source code: see the GitHub repository linked in the report.
+Source code: https://github.com/belladev250/kin-sentiment

@@ -1,0 +1,11 @@
+T3 AfroXLMR-base on TEST
+
+              precision    recall  f1-score   support
+
+    negative      0.640     0.772     0.700       355
+     neutral      0.704     0.532     0.606       393
+    positive      0.671     0.727     0.698       278
+
+    accuracy                          0.668      1026
+   macro avg      0.672     0.677     0.668      1026
+weighted avg      0.673     0.668     0.663      1026

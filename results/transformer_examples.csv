@@ -1,0 +1,490 @@
+kind,tweet,gold,pred_E6,pred_T3,oov_rate,n_agree
+fixed_by_T3,@user @user @user Kubeshya ntabwo Ari icyaha uretse iyo urukiko rubyemeje,neutral,negative,neutral,0.125,2.0
+fixed_by_T3,@user Niyo muhadjiri agitsinda yari kuvuga ko 10-4=6 this is shit mn,negative,neutral,negative,0.23076923076923078,2.0
+fixed_by_T3,Nonese guhita mubyirukakana kuri za WhatsApp status ni uburyo bwo gutangira amakuru ku gihe?? Singire uwo mbera umutwaro nyabu 😇😇😇,negative,neutral,negative,0.2631578947368421,2.0
+fixed_by_T3,"@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user Icyo gihe kizagera imbwa zameze amahembe. Reka tubitegereze!!! Naho uwatsinze we arazwi, uvuga ko atamuzi ubwo yifitiye ikindi kibazo",negative,neutral,negative,0.3684210526315789,2.0
+fixed_by_T3,@user Oya nanone abo ubanza biba birenze kuyicinya. Gushyirishamo abandi ni ububua,negative,neutral,negative,0.2727272727272727,2.0
+fixed_by_T3,"@user @user @user Oya, ibyo Janvier ntakosa yakoze, ahubwo atubarije ikibazo kiza nk'Umunyamakuru benshi twari mugihirahiro. Reka dutegereze igisubizo kubabishinzwe.",positive,neutral,positive,0.2222222222222222,2.0
+fixed_by_T3,Imodoka za @user zibwe ku munsi w'ejo zatangiye guterwa irangi! #Congo weeee uteye isoni n'agahinda. Dommage https://t.co/uWbpjJ3yIN,negative,neutral,negative,0.29411764705882354,2.0
+fixed_by_T3,@user @user @user @user @user Hhhhh! Njye nta cyizere njye mfite pe!,negative,neutral,negative,0.2857142857142857,2.0
+fixed_by_T3,"Nubona umuntu ugukunda by'ukuri Kandi akagukundira inshuti n'umuryango ntacyo ashingiyeho ahubwo ari ngombwa, uzamugire inshuti.""""",positive,negative,positive,0.29411764705882354,
+fixed_by_T3,"Icyumweru kiza kurimwe mwese mutari muziko nyuma yizamuka ry'biciro cyane cyane kubiribwa, na sumu ya panya yahenze!😂😂😂 https://t.co/N068i6GgjL",negative,neutral,negative,0.3888888888888889,2.0
+fixed_by_T3,"@user Ntabwo ari ugusunika kuko difference y'amanota ni nto. Ibyo nanditse ndabizi, uzaze nkwereke izo ngo.",neutral,negative,neutral,0.25,2.0
+fixed_by_T3,"Ntukabitindeho birashoboka kubaho ntampano nimwe wifitiye rwose, uretse iyo kuburana bya hato na hato.",negative,positive,negative,0.35714285714285715,3.0
+fixed_by_T3,Kuko tutabikemuye kare twazisama twasandaye byumwihariko nkabafana ba @user muri rusange turababaye nukuri @user @user @user @user @user,negative,positive,negative,0.3333333333333333,2.0
+fixed_by_T3,Ibibazo byawe si igihano ahubwo ni ukugukangura ngo umenye ko hari imbaraga ziri muri wowe @user @user #Rwanda #RwotGain https://t.co/ohHcAdJQS6,positive,negative,positive,0.058823529411764705,3.0
+fixed_by_T3,@user nukuyisangira nibwo wagira umutuzo kurusha uko warya wenyine icyo ukoze kiba kizakugarukira #GIRANEZAWIGENDERE,positive,negative,positive,0.3076923076923077,2.0
+fixed_by_T3,@user Nkubu bakaba Ari abanjye,neutral,negative,neutral,0.0,2.0
+fixed_by_T3,@user Aho nta foto idasanzwe washyize kuri Twitter? Hari igihe baguhana for some times kubera kurenga ku mabwiriza runaka.,neutral,negative,neutral,0.2777777777777778,2.0
+fixed_by_T3,@user Ibyaha biregwa nshuti *kwifuza ibyabandi *kugaya nyagasani uko yamuremye *lack of self-confidence *Low level of mindset,negative,positive,negative,0.47058823529411764,2.0
+fixed_by_T3,@user Ntabwo bakwifuza ko amahoro aboneka kuko imbehe yabo yahita yubama.,negative,positive,negative,0.4,3.0
+fixed_by_T3,@user @user @user 😂😂😂muranteraniye 🙄 i got feelings-proof heart bwa bimasa mwe i dont do feelings...,negative,neutral,negative,0.3076923076923077,2.0
+fixed_by_T3,@user Ni yo mpamvu wanditse Ikinyarwanda kirimo amakosa menshi y'imyandikire se? Kandi ngo uri Umunyarwanda utavangiye.,negative,neutral,negative,0.0625,2.0
+fixed_by_T3,#Rwot iyo ubonye umubyeyi ukina n'abana wowe ubifata ute? #KinaWiga Ijwi ryawe rirakenewe aha 👇🏾 https://t.co/vlJDnc3rT7,neutral,positive,neutral,0.13333333333333333,3.0
+fixed_by_T3,@user @user @user Ntitwigeze tubona tugira nama hirwe yo kubona ababyeyi bacu bass arko https://t.co/nXHgp9izhH,negative,neutral,negative,0.36363636363636365,2.0
+fixed_by_T3,"@user @user @user @user @user @user @user @user @user Ni nde uvuga w'umunyapolitiki? Rindira @user bamukubwire. Un génocidaire, criminel en puissance.",negative,neutral,negative,0.4166666666666667,2.0
+fixed_by_T3,@user @user @user @user @user @user Ubanza ari ugushyira ibimyetso bigaragara muri utu tuyira!,neutral,negative,neutral,0.375,3.0
+fixed_by_T3,@user Mbese twanzure ko ubugambanyi ari bwo ntandaro ya poor organization ya event?,neutral,negative,neutral,0.3333333333333333,2.0
+fixed_by_T3,@user @user @user @user @user @user @user @user @user @user Iri shyano ry'umugome w'umugore barijyanye Madirdi koko? Muryoroyemo rwose,negative,neutral,negative,0.36363636363636365,2.0
+fixed_by_T3,@user Nukwihangana nonex imvura nimbi nyine nitwitabire dukure ikibuza ko dutambuka ukomeze ube nyagerwa,positive,negative,positive,0.5384615384615384,2.0
+fixed_by_T3,Ikoranabuhanga ni inzira yihise yo kubona amakuru akenewe mu iterambere rya @user #DigitalNyamagabe https://t.co/uWCJMHsQF7,positive,neutral,positive,0.16666666666666666,2.0
+fixed_by_T3,Mushobora gukurikira ibirori byo kwizihiza umunsi mpuzamahanga wo kurwanya #SIDA uko ubera mu karere ka Nyagatare. https://t.co/u9FxbjZoU3,neutral,positive,neutral,0.0625,3.0
+fixed_by_T3,@user @user Ikibazo inshuti zanjye ubanza nta n'imwe ikoresha airtel,neutral,negative,neutral,0.0,2.0
+fixed_by_T3,Ubwoko bw'amafi agira amahwa mbese akunze guteza ibyago byo guhagamwa ni: · croaker · turbot · rockfish · pollack · mackerel · flounder N'ayandi n'ayandi.... https://t.co/yaWHveJ0Pk,neutral,positive,neutral,0.4090909090909091,2.0
+fixed_by_T3,@user Uyu arabizi cyane incundura yarazimaze!! Ubu niwe uhetse ikipe afatanyije na Kambale Salita Gentil.,neutral,positive,neutral,0.5,2.0
+fixed_by_T3,@user @user Wapi cyari ikirahuri giteretse kuri kontwari😂😂😂,neutral,negative,neutral,0.5,3.0
+fixed_by_T3,"@user Ntanumuntu mubi ubaho kuko twese twese tutari beza mubitandukanye ahubuo njye mbona ko turi ba Mr,cg Mrs.",positive,negative,positive,0.16666666666666666,2.0
+fixed_by_T3,@user Njye maze kureba bako sinareba ruhago arongeye abakoze mujisho x man mpa update,neutral,negative,neutral,0.38461538461538464,2.0
+fixed_by_T3,"Urumukobwa hanyuma mama wawe akagufata kuri boutique urimo kugura udukingirizo , wamusobanurira ngwiki??? @user",negative,neutral,negative,0.3333333333333333,2.0
+fixed_by_T3,@user @user Oya. Igihano cy'urupfu cyaciwe mu Rwanda muri 2007.,neutral,positive,neutral,0.2222222222222222,2.0
+fixed_by_T3,"@user Nibakomereze aho, ntawiyumvagamo uburinzi n'ubudahangarwa muri bo nk'umuyobozi wabo muri MRCD, cg umuyobozi wa FLN Irategeka.🤗",positive,negative,positive,0.2222222222222222,2.0
+fixed_by_T3,Menya ubutwari bw'abatangije urugamba rwo #kubohora u Rwan da... https://t.co/AfMkwylgei,neutral,positive,neutral,0.3,2.0
+fixed_by_T3,@user @user Ese ko wameze amababa raa ? 😃😃,negative,neutral,negative,0.4,2.0
+fixed_by_T3,@user Cyabitama uraho wa mfura we,positive,neutral,positive,0.2,2.0
+fixed_by_T3,@user @user Birashoboka cyaneee rwose kuko igiceri 10 cya kera cyari gifite agaciro,neutral,positive,neutral,0.18181818181818182,3.0
+fixed_by_T3,@user Noneho jya uhora wambaye. No muri douche ujye woga wambaye. No gukora imibonano mpuzabitsina ujye uyikora wambaye.,negative,neutral,negative,0.058823529411764705,2.0
+fixed_by_T3,@user @user Ahari kujya ibitekerezo hagiye kubyibuha cg wanasanga abiterwa nagahinda kimiterere gusa ni Tete vide🤏,negative,neutral,negative,0.5,2.0
+fixed_by_T3,@user @user @user Ikiza n uko nzaba ntakuririye ikindi ntuzampoze. Muyandi magambo banza ukure uce ubwenge ubone kuvuga.,negative,neutral,negative,0.26666666666666666,3.0
+fixed_by_T3,"Nyuma yo kubona ko Inka zifasha no mumikurire, @user nawe yiyemeje kujya azicurangira kugira ngo zigire ubuzima bwiza bwo mumutwe!😂😂🤣🤣 https://t.co/Tl6XTum3ud",positive,negative,positive,0.21052631578947367,2.0
+fixed_by_T3,@user @user @user @user @user @user @user @user @user @user @user Ikibazo : Abahanzi Nako #Abahashyi + Itangazamakuru + Sosiyete Bose babigiramo uruhare!,neutral,negative,neutral,0.2222222222222222,3.0
+fixed_by_T3,@user @user Njye ndakubwira ibyanditse sinjya kwimajina. Ni hehe uzi handitse ko Yosuwa yacyanditseho?,neutral,negative,neutral,0.4166666666666667,3.0
+fixed_by_T3,N’iki cyagutera kwirengagiza umuntu muziranye?,neutral,negative,neutral,0.16666666666666666,2.0
+fixed_by_T3,"@user Mbega weee! Ubu nari hehe! Nguhaye umugisha w’ababyeyi. Muzagire urugo ruhire wowe n’uwawe. Urubyaro, ubutunzi no gutunganirwa mbibaturiyeho.",positive,negative,positive,0.25,3.0
+fixed_by_T3,Amahugurwa y'abayobozi b'imidugudu n'ab Akagali ka KIRENGE /RULINDO kuri UNCRPD no K'ubumuga bwo mu mutwe. https://t.co/EfsalcWaCW,neutral,positive,neutral,0.15789473684210525,2.0
+fixed_by_T3,"Aho kugirango plastic ,zitwangirize ikirere cgangwa ubutaka ,twazihinduramo ibindi bikoresho kandi byagaciro murwego rwo kurinda environment https://t.co/76p5CbnRKU",positive,neutral,positive,0.5,2.0
+fixed_by_T3,@user Erega Uzarebe ngo icyo Umutima ukunda amata aguranwa itabi tubaterera amavi ark ahanini tuba twishakira batotizuba,negative,positive,negative,0.375,3.0
+fixed_by_T3,Woe @user uri umuntu w'umugabo cyane nubwo uruhara rwagiye ariko uri umusaza,positive,negative,positive,0.16666666666666666,2.0
+fixed_by_T3,@user Ubwiwe n'iki ko umugore we atavuye gukorera amafaranga agahitira muri iriya mirimo??,neutral,negative,neutral,0.15384615384615385,2.0
+fixed_by_T3,@user Izuba ryamanutse! Wihangane nugutera agatebe muri douche ariko bitari ukoga ahubwo kwibobeza just!,negative,neutral,negative,0.3076923076923077,2.0
+fixed_by_T3,"@user 😂😂😂 uti iyo bunaniye, merci uncle Shaba",positive,negative,positive,0.3333333333333333,2.0
+fixed_by_T3,@user 🙄Ugize ngwiki wa mbwa we😒😒😒 https://t.co/HWzhhjen5B,negative,neutral,negative,0.0,2.0
+fixed_by_T3,Mu buzima ni ibihe bibazo wahuye nabyo bikagufasha kuba umuntu uriwe uyu munsi!? #boda2boda hamwe na Shyne Andrew https://t.co/GAmudbtL2u,neutral,positive,neutral,0.2222222222222222,3.0
+fixed_by_T3,@user Simbizi niko numvise bavuga ngo harimo na kenya n’u Burundi 😂,neutral,negative,neutral,0.0,3.0
+fixed_by_T3,Ubwo irushanwa ryaraye rishojwe Amahoro muce inkoni izamba. https://t.co/erjOmMirZU,neutral,positive,neutral,0.5,2.0
+fixed_by_T3,"Ntabwo ari ukumwibonamo, ahubwo ni bamwe! https://t.co/d2VlyN0G3r",neutral,negative,neutral,0.16666666666666666,2.0
+fixed_by_T3,@user @user Nabibonye boo 😂😂😂😂😂 Gusa ntabirenze kuko na Bosco yazifunga.,negative,neutral,negative,0.25,2.0
+fixed_by_T3,@user @user Urabeshya. Reba neza muri background hari ibigaragaza ibihe turimo. Iyo ubuze ibyo unenga uricecekera.,negative,neutral,negative,0.2857142857142857,2.0
+fixed_by_T3,"@user @user @user @user @user @user @user @user @user @user Ariko iki kizina ntago kibikora. Ubu yakwiyise """"umwase w'inturusu"""" kweli?",negative,neutral,negative,0.45454545454545453,
+fixed_by_T3,#RwOT #RwotGain @user Aba bagabo badasiramuye koko 😂 Turabakwiza hehe? https://t.co/tjGZqmuNGp,negative,positive,negative,0.25,2.0
+fixed_by_T3,Umva rero ibintu bya Nomfe nomfe twabirambiwe ushobora kuzana iyo Ndirimbo tukayumva cg ukaza yiyumvira hitamo kimwe uzane iyo #Bado @user @user @user @user @user https://t.co/TnxEqCQHNV,negative,neutral,negative,0.45,2.0
+fixed_by_T3,"#RwOT Waramutse #Rwanda ? Abakiri bato bakuriye mu mijyi, mwaba muzi ibyo bikoresho? https://t.co/t7aUsMqdY0",neutral,positive,neutral,0.3333333333333333,2.0
+fixed_by_T3,Tubahaye ikaze i Shyorongi @user ahagiye kubera umuhango wo gusoza icyumweru cyahariwe ibikorwa by’Abaskuti mu Rwanda. 🔴STAY TUNED 🔴 https://t.co/Zn3CXGtWqz,positive,neutral,positive,0.2777777777777778,2.0
+fixed_by_T3,@user None aga makuru muduhaye muragira ngo tugakoreshe iki😂😂😂😂,neutral,negative,neutral,0.375,2.0
+fixed_by_T3,Sijya nibagirwa @user umu papa umpa imbaraga we na @user urugo rwabo ndarukunda,positive,negative,positive,0.2727272727272727,3.0
+fixed_by_T3,"@user @user “Hahirwa uwemera atabonye “-Icyo gitabo ubwacyo ni ko cyemeza. Byo kumvikana n’uwo utareba, utanumva ni urundi rwego.",neutral,negative,neutral,0.3333333333333333,2.0
+fixed_by_T3,@user @user Rwose ibyo yakoze ntibibaho! Gufata bulletin y'umwana w'abandi akayishyira ku karubanda.,negative,positive,negative,0.15384615384615385,3.0
+fixed_by_T3,@user Hahahah. Icyo kizere ndagishaka pe,positive,neutral,positive,0.6,2.0
+fixed_by_T3,@user abagande ko mbona bari kuvuga,neutral,negative,neutral,0.2,3.0
+fixed_by_T3,@user muri Ndera Hari ikibazo cya Network nubwo tuvuga mukatwihorera guhamagarana n'ikibazo!,neutral,negative,neutral,0.16666666666666666,2.0
+fixed_by_T3,@user @user Mwiriwe neza None c ? Kubera iki? Umurongo wo kwiyandikisha Mwawufunze Kandi @user yaravuzeko kwiyandikisha bizageza kuri 30,neutral,negative,neutral,0.0,2.0
+fixed_by_T3,UMUTIBA( icyima) banyarwanda dusigasire ubworozi bw'inzuki. #RwOT ngaho Aho username nkoresha yavuye. #umutibartdesign #umutibatv https://t.co/DTbEBxHmMY,neutral,positive,neutral,0.4,3.0
+fixed_by_T3,@user Afite ubuzima nk'abandi bose ntiyahamagarira abantu ku bwambura abandi nagende aragaceza muzunga,negative,positive,negative,0.3076923076923077,2.0
+fixed_by_T3,Uyu munsi muri gahunda ya #RBAHafiYawe turi mu Karere ka @user. Zimwe muri gahunda za Radio Rwanda zirakorerwa rwagati mu baturage. https://t.co/MNcoBMBxpr,neutral,positive,neutral,0.05,2.0
+fixed_by_T3,Twese turi hano kubwimpamvu zidasanzwe. Reka kuba imbohe ya hahise hawe. Ba umwubatsi w'ejo hazaza.,positive,neutral,positive,0.25,2.0
+fixed_by_T3,Ese ko ntamunsi icya isaha umuhogo ufunga uyu munsi kunywa bisaba iki😋,negative,neutral,negative,0.25,2.0
+fixed_by_T3,@user Icyonzicyo Aho wari kumuhonda,negative,neutral,negative,0.25,2.0
+fixed_by_T3,"Ibintu 3 byo kureba: Intumbero, Imyitwarire, Ururimi.",neutral,negative,neutral,0.14285714285714285,3.0
+fixed_by_T3,@user @user @user @user Unshyira kuri Pampa za Claramama ? 😁 Umunsi twahuye nukugukuramo iyokotsa😄😄,negative,neutral,negative,0.6666666666666666,3.0
+fixed_by_T3,@user Ibyo bizaba igihe amavubi azaba yatwaye mondial. Ubwo bivuzeko tegereza Ari umuturanyi wa Heba🙄🙄🙄✌️🙄,negative,neutral,negative,0.14285714285714285,2.0
+fixed_by_T3,@user Umva nawe ra! Kandi nyine ari inshuti yanjye!,positive,negative,positive,0.0,3.0
+fixed_by_T3,Ufite Ubwisungane mu Kwivuza #MUSA nturembera mu rugo #MUSA Save life @user @user @user @user @user @user @user https://t.co/nH08VHq8II,positive,neutral,positive,0.2727272727272727,2.0
+fixed_by_T3,@user @user @user Ahhhh! Ariko se bariya bakinnyi babiri ntibakoze obstructions kuri Olivier!!! Yemere akubitwee,negative,neutral,negative,0.4166666666666667,2.0
+fixed_by_T3,Kuki yanze kwiba izi phone koko yarebaga iki✈️✈️✈️✈️ https://t.co/flVwlrTOVK,negative,neutral,negative,0.125,2.0
+fixed_by_T3,@user murikumpemukira nuko ntajya mbiba bwira peeee Internet banking,negative,neutral,negative,0.25,2.0
+fixed_by_T3,@user @user @user Ari umwana n'umubyeyi ni nde ufite inshingano zo kurera undi??,neutral,positive,neutral,0.0,2.0
+fixed_by_T3,"Ni ukutumva igifaransa cg ya mazi ajya amuganza yari yamushoboye!!! Notre pauvre #Kayumba, """"définition d'un Ivrogne"""" https://t.co/QiQum5gun7",negative,neutral,negative,0.4117647058823529,
+fixed_by_T3,@user Ni academic ya rayon yatsinzwe c ngo twemere ko barikubaka rtd jean fidel yavuze azayigeza kure hashoboka,neutral,negative,neutral,0.29411764705882354,2.0
+fixed_by_T3,Tangira umunsi ushyira akamwenyu ku munwa #Menya #RwOT #Rwanda #Rwandan https://t.co/m8dKqNnNtU,positive,neutral,positive,0.3,3.0
+fixed_by_T3,Dore umunezero ubwo twaridusoje igitaramo I @user #Kimonyi abaturage harimo n'abanyamahanga bati wakoze byarumunezero @user @user @user @user @user @user https://t.co/EAZFNiXNYD,neutral,positive,neutral,0.21428571428571427,2.0
+fixed_by_T3,@user @user Icyizima ni ugukuraho inkwano kuko ifite igisobanuro kibi. Ibindi ni ugufindafinda!,negative,positive,negative,0.2727272727272727,2.0
+fixed_by_T3,@user @user @user eka mwebwe muraturembeje nange barankata buri munsi ibi bintu nubujura kbs,negative,positive,negative,0.2727272727272727,2.0
+fixed_by_T3,"Tembera250: Waruziko imparage zifashisha amabara yazo mu kwihisha, byinshi wamenya kurizo KANDA HANO 👇🏼👇🏼 https://t.co/Qd9cQQhLav",neutral,positive,neutral,0.38461538461538464,3.0
+fixed_by_T3,@user Wazashatse aga take away ko numva Congolese batazi neza gahunda raa,negative,positive,negative,0.18181818181818182,2.0
+fixed_by_T3,@user Blessing to ya musaza YAGO,positive,neutral,positive,0.2,3.0
+fixed_by_T3,"🚨Kuzimangatanya ibimenyetso🚨 #RwOT, Wari uziko Umuntu wese ukora kimwe mu bikorwa bikurikira, agamije kuzimanganya ibimenyetso aba akoze icyaha?:👇👇👇 @user @user #TumenyeAmategeko #KnowTheLaw https://t.co/1TaAnZYTrg",neutral,positive,neutral,0.25,2.0
+fixed_by_T3,"Ariko iyi kipe niba ari uko ifite #igikundiro, Fédération namwe murayikunda mugakanya https://t.co/vc4ZkcFoFo",positive,neutral,positive,0.25,2.0
+fixed_by_T3,@user Uko abikingiza biyongera ni ko business zikomorerwa...twikingize ku bwinshi.,positive,neutral,positive,0.3,2.0
+fixed_by_T3,Ni iyihe Movie wakunze udashobora kwibagirwa cg wasubiramo kureba? Me: Nikita na Transporter.,neutral,negative,neutral,0.38461538461538464,3.0
+fixed_by_T3,Niko bigomba pe nta mpamvu yo kumugira injugu https://t.co/yHKfeVh9t7,negative,positive,negative,0.25,2.0
+fixed_by_T3,@user Hi Leah amakur ya kabanyana,positive,neutral,positive,0.6,2.0
+fixed_by_T3,Abakozi ba @user hamwe nabashinzwe umutekano bakoze igenzura ahahurira abantu benshi rigamije nokureba iyubahirizwa n'ishyirwa mubikorwa ry'amabwiriza yokurwanya Covid19 @user @user @user @user @user @user @user https://t.co/YxYxxF1FRJ,neutral,positive,neutral,0.4,3.0
+fixed_by_T3,@user @user Uyu niwe we nyine watuma nkora ubukwe,positive,neutral,positive,0.14285714285714285,2.0
+fixed_by_T3,@user Arko mana wee uri hangane hhhhhhh,neutral,negative,neutral,0.3333333333333333,2.0
+fixed_by_T3,".@user iyo mukomeza ya mvugo isobanura ishusho, naho ishusho gusa si benshi bahita bayumva. Murakoze https://t.co/8g3sDW6kuy",neutral,positive,neutral,0.14285714285714285,2.0
+fixed_by_T3,@user @user @user @user @user Utyoooo. Umugabo w'ukuri yubaha umugore. Umugore w'ukuri yubaha umugabo. Ibyo birahagije ngo batengamare.,positive,negative,positive,0.26666666666666666,2.0
+fixed_by_T3,"Ese ubona nka Twitter ishatse guhemba abantu bayikoresha cyane, uwaza imbere ninde? Woe waza kuwuhe mwanya ..../100?",neutral,negative,neutral,0.17647058823529413,3.0
+fixed_by_T3,@user Ku gishegy cye yakumanika,negative,neutral,negative,0.5,2.0
+fixed_by_T3,@user @user Aba aje kumariraho ubutuna yo kanyagwa,negative,neutral,negative,0.5,2.0
+fixed_by_T3,@user Hahhahahha ubwose kugutegeka birenze ibyo nibihe🤔,negative,neutral,negative,0.3333333333333333,2.0
+fixed_by_T3,@user @user @user Nawe ntukozwa igikwe se?,negative,neutral,negative,0.25,2.0
+fixed_by_T3,"@user Good morning, mwatumenyera uko tuzabona inkunga ya Leta kubantu bagifite ubudehe category kiri kumwe nicya babyeyi???",neutral,positive,neutral,0.25,2.0
+fixed_by_T3,@user « imirimo ibiri yananiye impyisi » nti watekereza amafaranga unarwane 😂 Ni urwenya gusa gusa!,negative,neutral,negative,0.4166666666666667,2.0
+fixed_by_T3,Iyi @user kombona gutsinda bigoye nutu dupase twayo twinshi imbere yizamu ra? #Kiygas @user,negative,positive,negative,0.4166666666666667,2.0
+fixed_by_T3,@user @user @user Hari ubwo mu kiganiro cya 20 minutes uba umaze gukupa nka gataratu ukupa wongera uhamagara gutyo gutyo.,negative,neutral,negative,0.23529411764705882,2.0
+fixed_by_T3,"Dr. Ugirashebuja Emmanuel yagizwe minisitiri w’ubutabera akaba n’intumwa nkuru ya Leta, ni umwanya agiyeho asimbuye Johnston Busingye https://t.co/XQvkLiR5E8",neutral,positive,neutral,0.0,3.0
+fixed_by_T3,@user @user @user @user @user @user @user @user @user @user @user @user @user Umutwaro bikoreye turetse n'uburemere urarenduka ntakimpoteli bawubonera bazawupfana bawurage n'abana babo,negative,positive,negative,0.6153846153846154,3.0
+fixed_by_T3,@user Kera narayumvaga nkarira bya nyabyo,negative,neutral,negative,0.6,3.0
+fixed_by_T3,@user @user @user Cyane. Kandi akenshi banakoresha ingredients zo munganda mukubitunganya bituma bimera nk uburozi kumuntu ukunda kubirya.,negative,positive,negative,0.4,3.0
+fixed_by_T3,@user Abantu benshi babivuga bitandukanye ariko njye ntacyo ajya antwara. Ndashaka kumenya abandi uko bigenda tu,neutral,negative,neutral,0.06666666666666667,2.0
+fixed_by_T3,"@user @user ariko mwanyibwire umukozi wo murugo uwo ariwe , nukorera murugo cg nukora murugo?ubund minister ushinzwe akazi yitwa gut?😥😥😥😥😥",neutral,negative,neutral,0.2777777777777778,2.0
+fixed_by_T3,@user Sorry igihe uri wenyine uge wibuka ko hari ukuri hafi uzi ibyawe akamenya ibyo ukeneye,positive,negative,positive,0.06666666666666667,2.0
+fixed_by_T3,@user @user Mugire inama y'ibyo akeneye kumenya,neutral,positive,neutral,0.0,2.0
+fixed_by_T3,@user Uwumva atabishaka ya retirinze se🤷,negative,neutral,negative,0.4,3.0
+fixed_by_T3,Ninde wari uzi ibi bintu... https://t.co/bnZBe9Hp7B,neutral,negative,neutral,0.0,3.0
+fixed_by_T3,"Muri @user by' umwihariko i Kibungo tubonye imvura rain 🌧️ y' umuvumbi byshatali. Thanks 👍 God #ÖzilNewz @user @user Kibungo, Rwanda https://t.co/SiwZvsn0ma",positive,neutral,positive,0.25,
+fixed_by_T3,@user @user @user @user Iyindwara iri ahantu henshi kandi yongera ubukana mugitondo na nimugoroba,negative,neutral,negative,0.5,2.0
+fixed_by_T3,"@user Yirebe rwose uyitangire, kugeza ubu nta yindi filime nyarwanda ndabona ikinanye ubuhanga nka yo. You will thank me later.",positive,neutral,positive,0.21052631578947367,2.0
+fixed_by_T3,@user @user @user @user @user @user @user @user @user @user Ubwo se niwe wabisabye?,neutral,negative,neutral,0.25,3.0
+fixed_by_T3,@user Ntubazi c ko ariko babaho! bahisemo inzira y'Umwijima Kandi ntago bizabagwa amahoro.,negative,positive,negative,0.23076923076923078,2.0
+fixed_by_T3,@user Uri umuhanga gusa! Amagambo yawe yuzuyemo ubwenge gusaaa!!! Ndagukundaa pee,positive,negative,positive,0.3,2.0
+fixed_by_T3,@user yasuye abaturage bo mu karere ka @user #Gacurabwengesector muruzinduko rwo kureba ibikorwa by'iterambere bikaze kugerwaho.@user @user @user https://t.co/M8wQYIJ2NI,neutral,positive,neutral,0.26666666666666666,2.0
+fixed_by_T3,@user Ahaaaaa ibi si sawa 😭😭😭😭,neutral,negative,neutral,0.0,2.0
+fixed_by_T3,@user Ariko uremera ko kubikora kwe bishobora gutuma agira connection idasanzwe n umwana we?,neutral,negative,neutral,0.23076923076923078,2.0
+fixed_by_T3,@user Niyo mpamvu nenga iyi leta ko itajya itandukanya ibyo byombi. Babifata kimwe hakazamo no kutagira ubumuntu 😏,negative,neutral,negative,0.375,
+fixed_by_T3,@user @user @user @user @user @user @user @user @user @user @user @user Mumbwirire ko na @user kugeza ubu irimo kwitwara neza muri #theBAL Uti #TuriPatriots https://t.co/9CHkXzOGE5,positive,neutral,positive,0.16666666666666666,
+fixed_by_T3,@user Generator arega aba ari nto ariko ntanubwo byegeranye cyane,neutral,negative,neutral,0.2222222222222222,1.0
+fixed_by_T3,Binanze mwegere umuhe undi munsi kuko birashoboka ko igihe wamuhaye byanze. Ariko ubizirikane pe💜 https://t.co/BibmmDBV6z,positive,neutral,positive,0.0,2.0
+fixed_by_T3,Inshuti iramubaza ngo: @user :Akinyuma ni agaki? @user :nubwo nsinziriye ndabumva. #Rwanda #RwOT #Showbiz #Africa #MUFC #MunawarFaruqui #music #museumarchive https://t.co/t4AeDhrcj4,neutral,positive,neutral,0.47058823529411764,
+fixed_by_T3,@user @user @user Wowe wakorewe brain mopping. Ahari ubwenge hajya negativism n'urwango. Uzipfire uko kbsa.,negative,neutral,negative,0.46153846153846156,
+fixed_by_T3,Igihe cyose ugiye kugura ibyuma bikonjesha banza ubaze ko bizigama umuriro. Wihendwa! #KonjeshaUzigama #SaveAsUCool @user @user @user https://t.co/YHfgItBREV,positive,neutral,positive,0.21428571428571427,
+broken_by_T3,@user @user @user Injiji ni wowe. Ikibazo cya mbere n'uko mutimenya!,negative,negative,neutral,0.1111111111111111,2.0
+broken_by_T3,Njye Nasura hariya hantu yezu yakoreye i Gitangaza gikomeye cyo guhindura amazi divayi. Ingwasi y'icyaka ntitwari kuzayikira😂 https://t.co/BAlgc46bRj,negative,negative,neutral,0.2777777777777778,2.0
+broken_by_T3,@user gahunda nugukomezanya na #Messi wowe ubyumva ut?,neutral,neutral,negative,0.2857142857142857,3.0
+broken_by_T3,"Muri iki gitondo, Nsuhuje Abantu mwese muri muri Repubulika Yigenga Ya Kivu. Abaturanyi banyu #RDCongo, #Tanzania #Burundi #Rwanda #Ouganda turabatashya cyane. https://t.co/VdXBnZoHnS",neutral,neutral,positive,0.14285714285714285,2.0
+broken_by_T3,@user @user @user Ariko Mana ubwose ushatse kuvuga iki? Mubyukuri Gusa ndumiwe cyane.,negative,negative,positive,0.0,3.0
+broken_by_T3,Ariko inkingo zose twafashe kuva tukiri impinja nizitubana nyinci mu mubiri bizagenda gute? #rwot #COVID19,neutral,neutral,negative,0.26666666666666666,2.0
+broken_by_T3,@user @user @user @user True sinzi impamvu amufasha gusakaza ibyo avuga sinibaza icyo bimarira abo abisangiza ?,negative,negative,neutral,0.4166666666666667,2.0
+broken_by_T3,@user Izi no gutereka amaso 😂,neutral,neutral,negative,0.25,2.0
+broken_by_T3,@user Ntanubwo izongera gukora! Bayikuye Ku mugati Kera yaranabitangaje,neutral,neutral,negative,0.5,2.0
+broken_by_T3,@user Ni david ndabumvira burera mwiko sunzu turi kumwe,neutral,neutral,positive,0.0,2.0
+broken_by_T3,"MURI IZI NDOBO🚫, NI IYIHE IRYANA CYANE🎭? 1. NTIBYAVAMO 2. SINDAKURA 3. NZABAZA MAMA 4. MFITE UNDI 5. NZAKUBWIRA",neutral,neutral,negative,0.3157894736842105,2.0
+broken_by_T3,kubera iki se? nta bikoresho tugira bikora ubukwe? 😉👋 https://t.co/tpEby60EUM,neutral,neutral,negative,0.25,2.0
+broken_by_T3,Ijambo rya Madamu Jeannette Kagame afungura Ihuriro rya 14 rya Unity Clu... https://t.co/i6KFejExih via @user,neutral,neutral,positive,0.15384615384615385,2.0
+broken_by_T3,"@user mwaramutse neza, mwareba ikibazo mbabajije muri DM. Murakoze",neutral,neutral,positive,0.125,2.0
+broken_by_T3,"*Murakaza neza mu materaniro adasanzwe y’uyu munsi uramenya imirimo16 y’akamere n’imbuto9 z’Umwuka.* @user Kicukiro, Kigali, Rwanda https://t.co/4cR32YwXjo",positive,positive,neutral,0.3157894736842105,
+broken_by_T3,"@user Ibyo byo kurifungura wibitekereza, kuko nanjye nakubaza ikirifashe😹😹, nibarifungura ni 3 izuzura mbere plz hh",neutral,neutral,negative,0.4666666666666667,2.0
+broken_by_T3,@user We azi ubwenge bwinshi cyane! Aho yicaye aba yumiwe akisekera! Gusa tuba tunamuvuna by the way.,positive,positive,negative,0.25,2.0
+broken_by_T3,@user Iyi Petit Mutzig ko mbona atari Petit raaa anyway HBD to you,positive,positive,negative,0.0,2.0
+broken_by_T3,@user @user @user Uti abo bombi barakorakora?,negative,negative,neutral,0.25,2.0
+broken_by_T3,Ese wowe nuwo mwashakanye(umugore cg umugabo) mwahitamo ko babatwitira umwana (surrogate)? @user @user @user @user @user @user @user @user @user @user @user @user @user #RwOT #surrogacy https://t.co/wm3GS9yxA4,neutral,neutral,negative,0.0,3.0
+broken_by_T3,"@user @user @user @user Man ushobora kugabanya ubwo biyerahamwe kur iyimihanda wanjiji we, dore aho wahereye uvuga ubusa gusa.",negative,negative,neutral,0.2,3.0
+broken_by_T3,@user Icyokibazi wibaza nanjye ndakibaza n'impamo ya Mungu 🥱,neutral,neutral,positive,0.375,2.0
+broken_by_T3,Ndakwinginze reka twibuke abacu bafite impanuka zo mu mihanda. Wirinde gutwara wanyoye wo kubyara we!!,positive,positive,negative,0.0,2.0
+broken_by_T3,@user @user Arimo kugufasha inzira ugana uko imeze cg ugahitamo kuguma mu muhamagaro!!,neutral,neutral,negative,0.2727272727272727,3.0
+broken_by_T3,"@user @user @user @user Rizuzura byanze bikunze, barasubukura imirimo mu kwa Gatandatu",neutral,neutral,positive,0.375,3.0
+broken_by_T3,Iwanjye mu cyaro @user Volcanoes National Park https://t.co/lytfcjOYon,neutral,neutral,positive,0.5,
+broken_by_T3,@user @user @user @user @user Nyamara wasanga amakuru menshi umenya ku bikorwa byiza bya Leta uyakesha itangazamakuru.,neutral,neutral,positive,0.08333333333333333,2.0
+broken_by_T3,@user @user Umva kandi nari ngiye kukugira inama yo kuzitabira Miss Rwanda itaha none nyumvira,neutral,neutral,positive,0.23076923076923078,2.0
+broken_by_T3,"@user """"Ishimwe"""" ni izina umuntu wese yakwifuza kwita umwana we kbs👌",positive,positive,neutral,0.1,
+broken_by_T3,"@user @user Wiriwe neza Bera,, ntekereza ko Kilimandjaro Atari ikirunga ahubwo ni umusozi muremure . thx",neutral,neutral,positive,0.23076923076923078,3.0
+broken_by_T3,Icyo umwana yafashe ntikimuvamo: Abana b’incuke bahawe a mahigurwa yo kwirinda inkongi. https://t.co/MkImFuFa9N https://t.co/tnaVAENBlN,positive,positive,negative,0.3076923076923077,2.0
+broken_by_T3,Amahirwe yo gutsinda aracyahari🙌🙌 #ITA Goal⚽⚽⚽⚽ https://t.co/OifMh5YhAh,positive,positive,neutral,0.16666666666666666,3.0
+broken_by_T3,"@user Imyitozo irakomeza iki cyumweru cyose,Gahunda ni yayindi rwose @user #IbyishimoNiYoNtego",neutral,neutral,positive,0.1,3.0
+broken_by_T3,Mwambonye ahantu nicaye hariya inyuma 🍷🥂🥂🥂🥂🥂🥂 nako hariya mubimbere Ntabe ari njye utuma tutareba basketball #fata_urukingo https://t.co/6a0JWGs3GO,negative,negative,neutral,0.25,2.0
+broken_by_T3,"#IWD2021 Abanyarwandakazi ku ruhembe Mwisi ya siporo urugendo ruracyari rurerure, 1. @user Minister @user 2. @user Vice-president @user 3. @user Vice President @user Hari nabandi ariko ni bake , #ChooseToChallenge #WomensDay https://t.co/KrbqQHvdLY",neutral,neutral,positive,0.32,2.0
+broken_by_T3,@user @user Zizane twisekere ni hahandi h'abazikora nawe byakubaho 🤪🤪🤪,positive,positive,negative,0.5,2.0
+broken_by_T3,@user @user @user Nuko wamara kuyashyira inyuma ugakenesha abo uyoboye mu buryo nk'ubu ngubu,negative,negative,positive,0.25,3.0
+broken_by_T3,@user @user @user Ubundi kwanza ni mwese 🌚🌚,neutral,neutral,positive,0.25,2.0
+broken_by_T3,Muzi nka professeur muri lacasa de papel 🙄🙄🙄🤦‍♂️ https://t.co/t29YSOiqSp,neutral,neutral,negative,0.42857142857142855,2.0
+broken_by_T3,#RwOT Waha iki @user igenera umubyeyi utwite n'uwonsa batishoboye inkunga ituma bo n'abo batwite/bonsa babaho neza? Buriya kandi n'abagabo babo baboneraho.,positive,positive,negative,0.3333333333333333,2.0
+broken_by_T3,"@user @user hhhhh burya abantu ntitunganya ubwoba, n'irari ry'inyungu ntiringana!",neutral,neutral,negative,0.3,2.0
+broken_by_T3,Mu igihe igihugu gihaye salary ihagije umukozi wo hasi niho amafaranga azatugeraho. Twese rubanda rugufi,positive,positive,negative,0.4,2.0
+broken_by_T3,Subu wowe iyo urishije intoki uzikaraba hashize umwanya ingana iki nyuma yo kurya https://t.co/O37wdcC7el,neutral,neutral,negative,0.3076923076923077,2.0
+broken_by_T3,@user Ni abamikazi bayo c bro?,neutral,neutral,negative,0.2,2.0
+broken_by_T3,"@user Bafite ibitangazamakuru bikomeye binasetingira agenda iby'ino aha, icyo badashaka baragiharabika, icyo bashaka bakagisingiza",neutral,neutral,negative,0.21428571428571427,2.0
+broken_by_T3,"Umuvugizi wa Polisi, @user arasaba abantu baca inzira y'ubusamo kubicikaho, kuko amabwiriza yashyizweho agamije kubarinda icyorezo. #RBAAmakuru https://t.co/13gEbuwQie",neutral,neutral,positive,0.35294117647058826,3.0
+broken_by_T3,@user Rimwe na rimwe mba mbona ufite ubwenge... nawe watorokanye cash za RNP ubutabera buragutegereje.,positive,positive,negative,0.14285714285714285,2.0
+broken_by_T3,@user Ni muntabire se abarimo gutera iryovi ???,neutral,neutral,negative,0.5,2.0
+broken_by_T3,Ibyiza byo kunywa itabi: 1. Upfa udashaje kuko upfa hakiri kare. 2.Ntagisambo cyakwiba iwawe kuko urara ukorora.,negative,negative,positive,0.3333333333333333,3.0
+broken_by_T3,Umwe mubakinnyi isi izibuka kubera kwitwara neza bigaragarira buriwese mugihe yakinanaga na Bissaka Maguire nabandi nkabo bagwirirana https://t.co/GVNrorvnm7,neutral,neutral,positive,0.4117647058823529,2.0
+broken_by_T3,@user @user Strawberry flavored kuko igira impumuro y’inkeri. Nta kuntu mwagabanya ibiciro. Ibibazo by’imirire bimeze nabi kandi murabona n’icyorezo cyaradukenesheje bikabije!,neutral,neutral,negative,0.22727272727272727,3.0
+broken_by_T3,@user @user Urwo ni uruhe se kandi ko ntaruzi?,neutral,neutral,negative,0.2857142857142857,2.0
+broken_by_T3,Mn uzamenya ko abakobwa ntamikino bagira Nubona izina yanditse kuri nbr yawe Hari umuswa nzi wanyanditseho ng:TRANSPORT MONEY.,negative,negative,neutral,0.2631578947368421,3.0
+broken_by_T3,@user Trailer yatumye ngomba kwitonda nkazareba ikiganiro nta kirogoya. Nzavuga n’ai-je,neutral,neutral,negative,0.5,2.0
+broken_by_T3,"@user Yeah. N'ibyo birimo! Gusa n'imirimo na yo ni impamvu, nigeze kubyumva! Kwiga kuyikora no kuba muyikora biratandukanye!",neutral,neutral,positive,0.15789473684210525,3.0
+broken_by_T3,@user Ni igihe Inka ziba zimaze kurisha kumanywa hanyuma zikaryama zirimo ziruhuka.,neutral,neutral,negative,0.2727272727272727,2.0
+broken_by_T3,@user @user @user Bagirishya nambwira ko umurozi yashyinguwe ndatangira kwitegura!,negative,negative,neutral,0.5714285714285714,2.0
+broken_by_T3,Twabazaniye Khuran wanditse Saa Moya ya Bruce Melodie|| Bajye baduha credit|| Ukuri kose hanze!!! https://t.co/3n55jOuh2s #Rwanda,neutral,neutral,positive,0.2,2.0
+broken_by_T3,"@user Hon Minister,hasigaye gushyira amapave hanze mu rwego rwo kuhasukura n'inzugi 2 imbere.",neutral,neutral,negative,0.21428571428571427,3.0
+broken_by_T3,@user @user Nawe ntiwibagirwe gakomeza gusaba Imana ubwenge kuko ndabona n ubu ntaburaza,negative,negative,positive,0.2727272727272727,2.0
+broken_by_T3,"Umujinya wa Rwabwigwa, Umwami w’ishyamba si bwo ugurumaniye ku muntu umwe. https://t.co/ggREYIVDmM",negative,negative,positive,0.16666666666666666,2.0
+broken_by_T3,@user Nari maze umwanya ntamama akajisho kuri iyi mihanda ariko ndabona mukomeje kuyitengamaza💯,neutral,neutral,positive,0.16666666666666666,2.0
+broken_by_T3,"@user mwiriwe neza, ikibazo cy'ibura ry'umuriro muri @user kirahangayikishije, services zimwe na zimwe ubu zarahagaze!",neutral,neutral,positive,0.13333333333333333,2.0
+broken_by_T3,@user Uburyo waruje untondagira menya utumvishe n'ikibazo😎. Utandukanye ikosa mu myandikire no kurumva/kutamenya ururima.,negative,negative,neutral,0.4,3.0
+broken_by_T3,@user @user @user @user @user nubwo ntari kureba match cya Phil sinkitayehoe but @user yamushunuriza wenda yagomana inama ze 😉,negative,negative,neutral,0.3076923076923077,2.0
+broken_by_T3,@user @user Keretse nk'ubu @user aguye kuri iyi tweet. Ndakubwiza ukuri yakubaga nta kinya. Ngo miliyoni mirongo ine???,negative,negative,neutral,0.1875,2.0
+broken_by_T3,@user Agahato kagomba kubaho kuko abantu bose si ko Bapfa kumva.,negative,negative,positive,0.2,2.0
+broken_by_T3,@user Uyu munsi ndayifite nyamara ushaka wakora geste😂,neutral,neutral,negative,0.2857142857142857,2.0
+broken_by_T3,@user Hi ni kimwe na Hy nyine byose ni ibya mu gitondo abantu bari kwiruka bajya ku kazi 😂,neutral,neutral,negative,0.058823529411764705,3.0
+broken_by_T3,@user nzaba ndeba ko bizarohera haribyo ureba ukabona ko bidashoboka pe,negative,negative,positive,0.1,2.0
+broken_by_T3,@user Bulls twarikuyitsinda byoroshye iyo green aba ahari,neutral,neutral,positive,0.2857142857142857,3.0
+broken_by_T3,@user @user HBD to him ubutaha ni ukuzaduhuza nkaba Sportif tukanywera hamwe dore nanjye Mba navutse,positive,positive,neutral,0.2857142857142857,3.0
+broken_by_T3,Rimwe na rimwe kutabona icyo ushaka bishobora kuba amahirwe aruta ayandi yose wagize mubuzima ✍️,positive,positive,negative,0.0,3.0
+broken_by_T3,@user @user Kuki batinya kuvuga ‘oya ‘ cg ‘yego ‘ ako kanya ko bifasha umusore gushakisha ikindi ikiganza mu ituze?,neutral,neutral,negative,0.125,2.0
+broken_by_T3,Amahoro nshuti kubera ko Ari ntangiriro yukwezi kuwa kaburi izi product ziri Kuri promotion kugeza 05/02/2022 https://t.co/pObD3Nb5tB,neutral,neutral,positive,0.2222222222222222,2.0
+broken_by_T3,#baragirangwiki? N'ubupfura ndetse n'uburyo bw'iza bwo gukoresha umutima-nama .hejuru y'umutima-nama @user kuba @user.n'IMANA.,positive,positive,neutral,0.05263157894736842,3.0
+broken_by_T3,@user nyine ngerageza kugenda nkagira isoni nubwoba bwo kugwa mu cyobo https://t.co/EMx0rtCwsS,neutral,neutral,negative,0.3,3.0
+broken_by_T3,Ikintu cya mbere ni amakuru. Abanyamakuru mwese ndabakeje! https://t.co/ushplUVOaU,neutral,neutral,positive,0.125,2.0
+broken_by_T3,"Friends,uyu munsi ndabona ari ukwitwaza amakote n’imitaka pe. https://t.co/2TPxgopvw0",neutral,neutral,positive,0.3,2.0
+broken_by_T3,@user @user Uti abafite ubwenge n'amafaranga ni bangahe?🤔 Usibye mwe mwanga u Rwanda abandi bose ibyo barabifite wongeyeho n'umutekano.,positive,positive,negative,0.10526315789473684,2.0
+broken_by_T3,@user @user @user Njyewe icyo mwifuzaho nuko yatuvangira umusiki Ibindi bikaza nyuma dore hano Rubavu Invura irahasesekaye tanks,neutral,neutral,negative,0.4666666666666667,2.0
+broken_by_T3,"Ese amakuru ndikumva ngo Yezu agiye kuza ku musozi wa Nyagatare, yaba ariyo?😂😎",negative,negative,neutral,0.07692307692307693,2.0
+broken_by_T3,@user @user @user Ninyoko konumva uzanye intambara kuri replay yabandi,negative,negative,neutral,0.42857142857142855,3.0
+broken_by_T3,"@user @user @user @user @user Icyintu cyimwe ndasaba abashinzwe amavubi nyuma yumukino.mutegereze umukino ubanze urangire ,kndi abanyamakuru mwese bimikino namwe birabareba.ka dutegereze.",neutral,neutral,positive,0.3157894736842105,3.0
+broken_by_T3,@user Mn nonese ibyo biryo byitwa ngwiki 😂,neutral,neutral,negative,0.0,2.0
+broken_by_T3,@user Imibare nubundi yatuzonze kuva kera 😂😂😂😂😂,negative,negative,neutral,0.2,2.0
+broken_by_T3,@user Babonye INTARE zihasesekaye....babona umuriro batigeze mu buzima bwabo. #RwOT,neutral,neutral,positive,0.2,2.0
+broken_by_T3,@user Muri bibiliya se cga mu buzima busanzwe,neutral,neutral,negative,0.14285714285714285,3.0
+broken_by_T3,@user Reka nyimanure ho gato niba yatangiye gusatura amabafure,neutral,neutral,negative,0.375,3.0
+broken_by_T3,@user 🤤🤤🤤nasubije ibyo nize😭😭 cyaze nibagiwe infirmity hari ikindi raa🙄,neutral,neutral,negative,0.3333333333333333,3.0
+broken_by_T3,"@user @user @user ngo """"va hejuru y'abashyitsi ube ukinira hanze n'abandi bana"""" 😂😂",neutral,neutral,negative,0.09090909090909091,
+broken_by_T3,Agahinda ka mbere nugufana Arsenal uri umukene rwose,negative,negative,positive,0.125,3.0
+broken_by_T3,@user Noex FOFO kuberik bitwa inzobere mubuzima nukubura icyo basobanurira abarwayi,neutral,neutral,negative,0.4,2.0
+broken_by_T3,@user Ikibazo nuko banze kuyishyira kuri YouTube,negative,negative,neutral,0.16666666666666666,2.0
+broken_by_T3,"Urutoki rumwe rwaguhanaguye amarira Umunsi umwe, ruruta ibihumbi byagukomeye amashyi mugihe cy'umunezero🤗🤗",positive,positive,negative,0.38461538461538464,
+broken_by_T3,@user N'ubwoko se? Mperuka tubwirwa ko ubumwe n'ubwiyunge buri hafi ku ijana ku rindi nari nzi ko ubwoko butakigenderaho.,neutral,neutral,negative,0.1,
+broken_by_T3,"Dore bamwe mu bana banyu uyu munsi nibataha bakagwa agacuho ,dore umukoro biriwemo! EP Cyaruzige Ndera @user #RwOT @user https://t.co/6LAaZEtFrj",neutral,neutral,negative,0.35294117647058826,3.0
+broken_by_T3,@user Hoya bihinduye isura babajyane kuri stade amahoro tubatore tunabareba dii bari kutuyobya wna @user @user @user,negative,negative,positive,0.0,2.0
+broken_by_T3,@user Kuki wumva ko ibicuruzwa byo Mugihugu cyawe byahenduka ariko ibyahandi ukumva ko ntakibazo byose ni STANDARD my guy,neutral,neutral,negative,0.0,2.0
+both_wrong,Umugore mwiza ntasohora umutwe mwishuka iyo umugabo asuze. https://t.co/PEnpt7AhJ3,negative,positive,positive,0.375,2.0
+both_wrong,@user na @user muze mumpe Congs ndyame! 😂,positive,neutral,neutral,0.2,3.0
+both_wrong,@user 😂😂😂poleni gisa 👊 nta storm idashira ngo hacye🤗,positive,negative,negative,0.42857142857142855,2.0
+both_wrong,Niba usobanukiwe ibimenyetso ubona ku bikarito? Dore ubusobanuro ngubu! #RwOT #Rwanda #Rwandan #menya https://t.co/m4Eln8Wmkd,positive,neutral,neutral,0.15384615384615385,2.0
+both_wrong,@user @user @user Harya nangahe ngo nyohereze,positive,neutral,neutral,0.5,2.0
+both_wrong,@user @user Nuko agenda yitura hasi ntiyamenyereye imisozi gusa banza uruta Jackson,neutral,negative,negative,0.3,2.0
+both_wrong,@user Iyi flop yatumarira iki koko??,negative,neutral,neutral,0.4,2.0
+both_wrong,"Nukuri ibyo yakoze yaratumwe,none iyo ataza kujyayo byari bumugendekere gute ? Nyamara intumwa ntiyicwa! https://t.co/Mt7nljYiRq",positive,negative,negative,0.2857142857142857,2.0
+both_wrong,Muhanga: Abaturage bijeje ubuyobozi ubufatanye mu kwesa imihigo nyuma yo kuyegerezwa iwabo https://t.co/ge97ITIjki @user @user @user @user @user,neutral,positive,positive,0.16666666666666666,2.0
+both_wrong,Imyitozo ya mbere y’umukino yagenze neza #AsKigaliVsDCMP #CAFConfederationCup https://t.co/gJMq6IETCp,positive,neutral,neutral,0.2222222222222222,2.0
+both_wrong,Guverinoma y'urwanda yifashishije indege zo mubwoko bwa helicopter kugirango zigeze inkingo za covide 19 hirya no hino mugihugu. @user @user @user @user @user @user @user @user,positive,neutral,neutral,0.15789473684210525,2.0
+both_wrong,@user @user @user @user @user @user Umwuka wanjye ntabwo uranyemeza gutwara igare muri uriya muhanda 🤷🏾‍♂️,neutral,negative,negative,0.1111111111111111,2.0
+both_wrong,"@user @user Gutera inda, byumvikana nko gutanga umwana kuko iyo nda ni yo abyara. Ntabwo ayimutera, bayikora bombi.",neutral,negative,negative,0.25,2.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user Kuki mwarindira kubikorerwa n'abagabo mu gihe muzwiho ubushobozi nk'ubwabo?,positive,negative,negative,0.36363636363636365,2.0
+both_wrong,Nyamara Amavubi ashobora gutungurana uyu munsi agatsindwa nka 2-0 gusa?? 🤷‍♂️🤷‍♂️🤷‍♂️🤷‍♂️,negative,neutral,neutral,0.18181818181818182,2.0
+both_wrong,@user Nyamara ariko nabonye hari abagore badakozwa ibyo gukuna. Ahubwo nk'Abanyarwanda sinzi niba tutabisuzuma tukareba niba koko ari bibi...,neutral,negative,negative,0.21052631578947367,2.0
+both_wrong,@user Bahembwa asigaye nyuma yo guhemba abayobozi nabo cyane ko aba Ari benshi kdi bahembwa n'agatubutse,neutral,negative,negative,0.1875,2.0
+both_wrong,"Abakora amasaha ari hejuru ya 40 mu cyumweru, bafite ibyago byo gupfa igihe (premature death)..gusa corona yabitije umurindi. https://t.co/bqKiDDoIAM",negative,neutral,neutral,0.15789473684210525,3.0
+both_wrong,"@user Sorry it was a typing error, meant muzatengamara ku munsi w'imperuka nubwo uwo munsi utazabaho😂",negative,neutral,neutral,0.3125,3.0
+both_wrong,@user nibiki byananiranye gukemura ariko kuva mu gitondo??,negative,neutral,neutral,0.14285714285714285,2.0
+both_wrong,@user @user @user @user Mureke dutwike dutanga amakuru agezweho ya sports kd tuyatangire ku gihe,positive,neutral,neutral,0.09090909090909091,3.0
+both_wrong,@user So ukubeshya RIB Ikwiye kugororerwa birenze rwose ibyo bakora harimo ubuhanga nubunyangamugayo,positive,negative,neutral,0.16666666666666666,3.0
+both_wrong,"Rutayomba warerewe muri @user n’umufasha we barwaye bikomeye, basabye gufashwa kwivuza- https://t.co/c5Gef7HZQE",neutral,positive,positive,0.18181818181818182,2.0
+both_wrong,@user @user Si inzika gusa! Jimmy kandi adufitiye amafoto menshi ashatse yayaduha! Mbega abantu ba kera weee!,neutral,positive,positive,0.13333333333333333,2.0
+both_wrong,Uyu munsi Urubyiruko rwabakorerabushake ba @user mungamba zo gufasha abaremye isoko mugukomeza kwirinda icyorezo cya covid19 @user @user @user @user https://t.co/WxEZFPfJKP,neutral,positive,positive,0.26666666666666666,2.0
+both_wrong,Harya ye mumbwire ino miwacu nako muri africa haracyaba ubwenge? Cyangwa ni ugukurikira abandi ngo nikomereze https://t.co/QIxQvIygmL,negative,positive,neutral,0.25,2.0
+both_wrong,Nk'uko byagombaga kugenda imikino 2 ya gicuti u #Rwanda runyagiye #CentreAfrica 7-0. Ni ibyo rwose #RwOT .Mukomereze aho bana b'u #Rwanda,neutral,positive,positive,0.125,2.0
+both_wrong,"Si ugusakuza gusa se? Nibashyireho umwete rwose. Wenda imiryango ya gereza izatinya urusaku yifungure, Rusesabagina asohoke. https://t.co/0vGRpefX8M",negative,neutral,positive,0.375,2.0
+both_wrong,@user Thank you ark nawe wibuke kunywa amazi mbere yo kuryama,neutral,positive,positive,0.0,2.0
+both_wrong,Amafaranga n'ububasha birikongera individualism mu Rwanda @user .Harigukorwa iki mu Rwanda ubusumbane bwere kwiyongera?,positive,neutral,negative,0.35714285714285715,2.0
+both_wrong,"Hello @user , tuyeau iciye minsi ya ruhururu iri kuri localisation iri hasi mwaza mukayikorera bitaraba grave . Good evening!! https://t.co/D75WllpFI8",positive,neutral,neutral,0.47058823529411764,2.0
+both_wrong,"Micomyiza Jean Paul arakekwaho ibyaha bitatu: icyaha cya Jenoside, ubufatanyacyaha muri Jenoside n'ibyaha byibasiye inyokomuntu. #RBAAmakuru https://t.co/lQcS7I2FuZ",negative,neutral,neutral,0.35294117647058826,2.0
+both_wrong,@user @user Digital currency iri kubangamira inyungu za politician and it is grow so fast,negative,neutral,positive,0.38461538461538464,2.0
+both_wrong,"@user @user @user Bazabikorere muri gereza, uzagaragarwaho ingengabitekerezo yaba yarasohotse cg akirimo itegeko rizakurikizwa.",negative,neutral,neutral,0.45454545454545453,2.0
+both_wrong,@user Nuko muri ino minsi kureba ibitatureba bidushimisha cyane kurusha ibindi byose,negative,positive,positive,0.09090909090909091,2.0
+both_wrong,@user @user Biriya yampaye se wamenya yabikopiye he? Ntabwo iriya ari Bible. Ibindi bitabo nawe wakwandika icyawe,neutral,negative,negative,0.2,3.0
+both_wrong,Kuvugirinka Mubukwe uzi neza ko wakoye amafaranga ninko kubwira umugore wabuze urubyaro ngo azane umwanana winsina muwite izina.,neutral,negative,negative,0.4444444444444444,2.0
+both_wrong,"@user Ndabonamo za mpanga, nkabona mpigi, abandi nddabibuka ariko amazina wapi",neutral,negative,negative,0.4,2.0
+both_wrong,"Rutahizamu wa @user , William Opoku Mensah yahagaritswe iminsi 8 adakorana imyitozo na bagenzi be kubera imyitwarire itari myiza. https://t.co/c0AaQrwt4T",negative,neutral,neutral,0.35294117647058826,3.0
+both_wrong,@user @user @user @user @user Nta mufana wa @user wakwifuriza ikiza na kimwe Liverpool. Nta na rimwe tuba twumva hari ikintu cyiza Liverpool yakwigezaho,negative,neutral,positive,0.16666666666666666,2.0
+both_wrong,"Nabaze nsanga ibimenwa biramutse bisaranganyijwe abicwa n'inzara, nibura ku munsi umuntu yajya abona toni 1.4 Nawe ujya umena ibiryo?",neutral,negative,negative,0.23809523809523808,2.0
+both_wrong,Hari abavuga ko umuyobozi ugaragaye mu makosa akwiriye kwirukanwa ndetse agahanwa aho kwimurirwa ahandi. Ibi wowe ubibona ute?@user @user @user @user,neutral,negative,negative,0.2777777777777778,2.0
+both_wrong,Ariko ibintu by’ibikuba (Inkuba) biri gukubita murabona bisanzwe ra!? Ni hatali kweli. https://t.co/BWgCyrHgTJ,neutral,negative,negative,0.07692307692307693,2.0
+both_wrong,@user Xlm Papa Ewan Amafaranga nibyose kbx Ndemezako àmafaranga atanga ibyishimo kugera naho ibiceri 30 byatumyw umwana wimana ahohoterwa,negative,positive,positive,0.3888888888888889,2.0
+both_wrong,@user Arasoza agira ati: fino mavubi alla fine😂😂,neutral,negative,negative,0.5714285714285714,3.0
+both_wrong,📸AMAFOTO📸 I Kabgayi hagiye kuzura inzu igezweho yo kubyariramo izaba ifite ahahugurirwa abimenyereza umwuga ndetse n'ahavurwa indwara z'abagore. #RBAAmakuru 📸: RHA https://t.co/79cyOa00Yf,positive,neutral,neutral,0.36363636363636365,2.0
+both_wrong,"Abahanzi ba Gospel barakundana, reba impano ikomeye bahaye @user ku munsi w’ubukwe bwe Video: https://t.co/nB4TGHKwKI",positive,neutral,neutral,0.21428571428571427,3.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user Ozeya umunsi twongeye gupanga guhura uzitwaze indangamuntu. Ubanza nkwitiranya nabona ibiro byawe nkagira ngo n’imyaka ni uko!,neutral,negative,negative,0.3888888888888889,2.0
+both_wrong,@user Uyu musore niyo ntwari yonyine ikiriho mu zo nzi😂,positive,neutral,negative,0.2222222222222222,3.0
+both_wrong,@user @user @user @user @user @user @user @user Nta kibazo na kimwe. Ikaze kucyumweru gitaha kuva 6-7h30am,positive,neutral,neutral,0.2,2.0
+both_wrong,@user @user @user Koko nawe ngo wigeze kumara iminsi muri coma,neutral,negative,negative,0.125,2.0
+both_wrong,Naryamye kuwa6 sayine zijoro none nicuye kucyumwer samunani rek nikoreh numv ko nkirih imins 2 yose ehhhh 😱😱🤔🤫🤫😭🤣🤣🤣🤣🤣,neutral,negative,negative,0.7058823529411765,3.0
+both_wrong,@user Nanjye ubu ndi kurira 😭,negative,neutral,neutral,0.0,2.0
+both_wrong,@user Niyo Mpamvu nemeranya nabo ko “ Nyamwanga kumva ntiyanze kubona “. Uburemere bw’igihango ntibwumva kimwe.,neutral,negative,negative,0.2857142857142857,2.0
+both_wrong,@user Mwiriwe neza ndimuhanga nibyiza kuba Aho irubavu baresheje imihigo bagafatanya bakizigamira Kandi dukomeze twubahirize Amabwiriza yo kwirinda covide 19,neutral,positive,positive,0.05263157894736842,2.0
+both_wrong,@user Nyine uhita wumva ubita inyeshyamba aho abogamiye,neutral,negative,negative,0.42857142857142855,2.0
+both_wrong,AMAKURU MASHYA: Uwari umuyobozi mukuru w’ikigo @user Bwana @user yahagaritswe ku mirimo ye kugira ngo akuriranwe kubyo ashinjwa. https://t.co/d7Yp0K9nCk,negative,neutral,neutral,0.17647058823529413,2.0
+both_wrong,Niba wumva ushishikajwe niterambere ry'umuhinzi wibirayi dushyigikire ukushoboye mubuhinzi bwibirayi byera vuba Kandi bidatewe umuti https://t.co/jnLPBAuPsJ,neutral,positive,positive,0.5625,2.0
+both_wrong,@user @user Oya pe. Urwango ndarurwanya aho ruva rukagera ariko ntibivuze guhuza ibitari mu murongo umwe.,positive,neutral,neutral,0.2857142857142857,2.0
+both_wrong,@user Ese ch muri byose ko ntanakimwe nakwemera ubwo byagenda gute?,negative,neutral,neutral,0.1,2.0
+both_wrong,@user Njye ndumva atari ngombwa guhumura izo parfume. Niyo wahumura ka gifura kawe woze ntacyo biba bitwaye,neutral,negative,negative,0.25,2.0
+both_wrong,@user @user @user @user @user @user @user Birashoboka se ?Gusa ikibazo cyo kirahari ariko niba bigeze aha?Turakomerewe,negative,neutral,neutral,0.09090909090909091,2.0
+both_wrong,"@user Nyamara ubanza kadahenze cyane, twa tumiliyoni duke ufite kuri konti turahagije",neutral,positive,positive,0.36363636363636365,2.0
+both_wrong,Ase Yago na Phil Peter bigeze he? Ka kana karacyiriza nka mbere?,negative,neutral,neutral,0.25,2.0
+both_wrong,Ase uwo munyamakuru ndi kumva bataye uwa kajwiga ni nde man??? @user @user @user @user @user @user,negative,neutral,neutral,0.09090909090909091,3.0
+both_wrong,@user @user @user @user @user @user @user @user Ubundi bafite inyogo yabo,neutral,negative,positive,0.0,2.0
+both_wrong,"@user @user Iyo mvugo ariko ntikwiye wagirango umugabo ahereza umugore inda Kandi Atari ko bigenda, ahubwo yari ikwiye guhindurwa!",positive,negative,negative,0.17647058823529413,2.0
+both_wrong,@user @user mwe mbakunda kubi 😂 uyu munsi nibwo murumuna wanyu yavutse 😭✌️,positive,negative,negative,0.2222222222222222,3.0
+both_wrong,@user @user @user Ububata ni bubi cyane. Amateka tugomba kuyavomamo amasomo ariko ntidukwiye kuzirikwa na yo,positive,neutral,negative,0.38461538461538464,3.0
+both_wrong,@user @user ni nkinkonii umwalimu yifashisha ashyira kumurongo abana bo mirii p2 utu natwo dutondesha amenyo neza,neutral,positive,negative,0.5333333333333333,2.0
+both_wrong,Hamwe n'Ubuyobozi bw'Umujyi wa Kigali turi gusura ibishanga tugenzura imikoreshereze yabyo ndetse tujya n'inama z'uko twayinoza. @user @user https://t.co/0z1PDTb3lE,neutral,positive,positive,0.15,3.0
+both_wrong,"Mubusanzwe kugirango wamuryango mukuru wanjye @user ukugereho neza nuko nawe ugambana #ubugambanyi @user @user Nyarugenge, Kigali, Rwanda https://t.co/VDwQcDQ5Q5",negative,positive,positive,0.35714285714285715,
+both_wrong,Ariko kuki ahantu hose bakingira ku kuboko? Uwatera urushinge ahandi ntibyakunda? Uwaba abizi yamfasha kubimenya!,neutral,negative,negative,0.4,2.0
+both_wrong,"@user @user 🙆🏾‍♀️ ubwo icyo nacyo kibe ikibazo!? Ndi umubyeyi rwose, worry not, Rukundo ntiyibeshye🙏🏾",positive,negative,negative,0.08333333333333333,2.0
+both_wrong,"Ariko ubu ntakuntu nyina w'ibibazo yaboneza urubyaro koko""""😞",positive,negative,negative,0.2222222222222222,
+both_wrong,@user Ziriya gahunda ni ubumara pe🤣🤣🤣abantu banafata credit ndacyeka🤣🤣,positive,negative,negative,0.4444444444444444,2.0
+both_wrong,@user @user Si uko ntabyumvise ahubwo nanze ubunebwe bamwe bashyira mu myandikire ugasanga ibintu bibaye ibindi. Ubwo yemeye gukosorwa nakomeze imihigo.,neutral,negative,negative,0.21052631578947367,2.0
+both_wrong,@user @user Uravuze ngo umurimo ni ubuhinzi ibindi ni amahirwe?,neutral,negative,negative,0.0,2.0
+both_wrong,@user @user Uyu musore yaranyandikiye Ambwira ngo imbwa yimana Irigende ngirango arantutse Aho kumbe niko yitwa😂😂😂😂😂 Sinamenye ko ariyo mazinaye😂😂,neutral,negative,negative,0.2777777777777778,2.0
+both_wrong,@user @user Mujye mucisha make daa kuk ni 🔥,positive,neutral,neutral,0.3333333333333333,2.0
+both_wrong,@user Kutavuga rumwe n'Ababyarwanda ari Umunyarwanda? Bikamumarira iki?,neutral,negative,negative,0.5,2.0
+both_wrong,"#Babyeyi, Konsa umwana wawe neza n'ingenzi, kuko bituma akurana ubudahangarwa mu mubiri kandi bikamurinda kurwaragurika bya hato nahato. #breastfeedingweek2021 https://t.co/GXTDooLqZi",neutral,positive,positive,0.25,2.0
+both_wrong,"@user @user Barebe amakosa yakoze, barebe n'ishyaka yari afitiye igihugu babishyire ku munzani.",positive,neutral,neutral,0.5,2.0
+both_wrong,@user Ku buryo wakwanzura kwikura ku Isi se?,negative,neutral,neutral,0.2857142857142857,2.0
+both_wrong,@user na @user namwe mbakunda kubi 😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂 Murumuna wanyu uyu munsi nibwo yavutse,positive,neutral,negative,0.2,2.0
+both_wrong,"@user Ibaze ko akazi bakoraga bakeneraga interineti ariko ntayo bahabwa, bakayigurira bumva ko udufaranga bazahabwa tuzayishyura none bitaratu wallah",neutral,negative,negative,0.4444444444444444,2.0
+both_wrong,Ikinyoma niyo cyasubirwamo inshuti nyinshi zingana iki kiraruha kikagenda nka nyomberi @user,positive,neutral,negative,0.2727272727272727,2.0
+both_wrong,kuki twishimira umunsi w'ubwigenge Ariko ntimutubwire uwaharaniye ubwo bwigenge?? 👁👁👁👁🙌🙌🙌,negative,positive,positive,0.3,3.0
+both_wrong,@user Ubwo inkumi uyishyira imbere ukagenda uyibwira.,neutral,negative,negative,0.3333333333333333,2.0
+both_wrong,"@user Muduhe rugari. Mufungure imiryango. Urukuta murusenye. Murebe ko urukundo mushaka,rubagera nk’amafu, n’umuyaga uhuhera mu gihe cy’izuba ridatwika.",neutral,positive,positive,0.38095238095238093,2.0
+both_wrong,@user @user Abamenyi b’ibisagarantongo (Archeologists) ntibarabibona se ko muri za pyramids raporo za buri kanya zerekana ibyo bavumbuye (mummies),neutral,negative,negative,0.4444444444444444,2.0
+both_wrong,@user -Amazi menshi yo kunywa buri kanya -Ryama bihagije -Rya ibiryo uhage -Irinde bintu bifite isukari nkorano -Exercise.,neutral,positive,positive,0.23529411764705882,3.0
+both_wrong,Ese koko birakwiye ko umubyeyi abura ubuzima mugiye atanga ubundi (abyara)??? Sobanukirwa impanvu zatuma umubyeyi abura ubuzima mugiye abyara👇 https://t.co/UG55ES2l5x https://t.co/oPwAf3d9Ya,neutral,positive,negative,0.2631578947368421,2.0
+both_wrong,Iyiminsi abakobwa barikunda cyane nuko nenda kuba umukire cg ngiye________!?,neutral,negative,negative,0.3,2.0
+both_wrong,@user Iki😂 Ariko ndabona warahinduye avi nae😅,neutral,negative,negative,0.16666666666666666,2.0
+both_wrong,@user @user Ni karibu😭 urashaka kuzaza imvura iri kugwa cgwa izuba riva?🤔🤔🤔,neutral,negative,negative,0.2,2.0
+both_wrong,@user Ewana aha mpaziye igihe kbsa!.. Nanjye nungutse inama🤣🤣 nuko boss aza kubibona...,positive,negative,negative,0.3333333333333333,2.0
+both_wrong,"#InganjizaRubavu Isaha ni saa cyenda uyu munsi tube hafi y’insakazamajwi n’amashusho ngo dukurikire impanuro z’Umukuru w’Igihugu, intore izirusha intabwe. @user @user @user https://t.co/VhbFa70ITK",neutral,positive,positive,0.21739130434782608,2.0
+both_wrong,Reka twizere ko ba mubyeyi bakumva bakaguhoza amarira. Pole. @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user #Rwanda https://t.co/DYZIXOxfZB,neutral,positive,positive,0.2,2.0
+both_wrong,"Muri gahunda ya #operationcovidfree Uyu munsi @user twahuguye #Anti-CovidClubs zo mubigo by’Amashuri, amahugurwa yaragamije kubongerera ubumenyi mu kurwanya ikwirakwira rya COVID-19. @user @user @user @user @user @user @user https://t.co/XR67ynGSaL",neutral,positive,positive,0.17391304347826086,2.0
+both_wrong,@user Rayon imyenda tadusaziyeho peee!! Uziko ku mupira wa Mico izina Rayon ryasibye!!! Shameful for @user,negative,neutral,positive,0.21428571428571427,2.0
+both_wrong,FULL TIME: @user 1-1 @user Disi Murera 😢 ubuse ntivuye ku gikombe bahu?,negative,neutral,neutral,0.09090909090909091,2.0
+both_wrong,@user Umusa umwana yari yaraheze hakurya y' umupaka se? . None biciyeme. Anyways .Congratulations,positive,neutral,negative,0.25,3.0
+both_wrong,Aha njye sinzahabura ndabona amafaranga yo kwinjira batayahanitse pe! Reba aho hariho uburyo waguramo ticket ... le 19 dec 2021 hazashya! #KigaliArena @user @user @user @user @user https://t.co/Evkk06eh85,positive,neutral,neutral,0.2857142857142857,2.0
+both_wrong,Ubusazi Bwa Putine bugeze no muri sports.Dore burayishegeshe. https://t.co/5cLbB1OOWr,negative,neutral,positive,0.3333333333333333,2.0
+both_wrong,@user Oya pe! Nuko nanga imyumvire y'ubujiji.,negative,neutral,neutral,0.14285714285714285,3.0
+both_wrong,Twabikora n'ubu hanyuma tulazabangutsa ntabirenze kbsa https://t.co/ZmACSNxgif,neutral,positive,negative,0.2857142857142857,2.0
+both_wrong,@user @user @user @user @user @user Menya nta bundles afite🤣🤣,neutral,negative,negative,0.0,3.0
+both_wrong,@user @user @user “...amucinya urushyi “..Byaje kugenda gute se nyuma y’aho? Barakomezanyije se?,negative,neutral,neutral,0.2727272727272727,2.0
+both_wrong,Monkeypox nayo se iraje? Mukomeze mwibere mw'Isi imwe na Virus,negative,neutral,neutral,0.09090909090909091,2.0
+both_wrong,@user Wasanga nawe uraka emoji,negative,neutral,neutral,0.5,2.0
+both_wrong,Iminsi iragenda yegera ngo tujye muri #Emirates! Niba nta makuru ufite byandike muri comment tukwibire akabanga! #IndotoZabayeImpamo na #GorillaGames #GGForEntertainment #KinaUtsinde #AhoUriHose mu #Rwanda https://t.co/SEySBOE0dH,neutral,positive,positive,0.4166666666666667,3.0
+both_wrong,@user nubwo bingoye kugera kuri twitter ariko nihahandi ndacyashaka kureba Keza 🥺😢🙏,neutral,negative,positive,0.3,2.0
+both_wrong,@user Njyew nabishize mu maboko y'Imana nsigaye niryamira nkabyuka nkareba uko byarangiye 😢,positive,negative,negative,0.3333333333333333,2.0
+both_wrong,Impungenge zishire Ubu wakoresha uruga O’Genius Panda umwana agatsinda neza ama sciences aho yaba ari hose 👍 https://t.co/7aIUl5JFFR,neutral,positive,positive,0.29411764705882354,2.0
+both_wrong,@user Gusa ahandi njya mbona ibyo mbasha kubona nkumva harimo inyurabwenge. Ntibanyikome nemera u Rwanda 😏,positive,negative,negative,0.21428571428571427,2.0
+both_wrong,Buri munsi umwana wanjye ambaza igihe azasubirira mu Ishuri! https://t.co/Lozs0UZIIz,neutral,positive,positive,0.2222222222222222,3.0
+both_wrong,@user @user Uravuze ngo mwese nta na cwa?,neutral,negative,negative,0.16666666666666666,3.0
+both_wrong,Bakiriya bacu. Turabashishikariza gukomeza kwifashisha ikoranabuhanga ryo kubitsa no kubikuza kuri telefone igendanwa mu kubitsa (*182*4*2*11*7#) no kubikuza(*182*4*3*11*7#). https://t.co/mCCQA4Hizi,neutral,positive,positive,0.2962962962962963,2.0
+both_wrong,@user @user Hahaha video za gospel kuzifata bigombera kuba ufite umugore se?,neutral,negative,negative,0.3,2.0
+both_wrong,Murararitswe kuri uyu munsi hamwe na @user dufatanyirije hamwe twatsinda #ihohoterwa Ni #indaziterwaabangavu. @user @user @user @user @user @user @user @user https://t.co/yNXjIEVMQF,neutral,positive,positive,0.3333333333333333,2.0
+both_wrong,Icyamamare cyahageze umuhungu wabanyarwanda @user yamaze kwakira nurugwiro rwinshi inshuti ye kuva muri Nigeria niwe Don Dada @user #Rwanda #RwOT #Rw🇷🇼 #Nigeria https://t.co/HN7ecpYg7U,neutral,positive,positive,0.2,2.0
+both_wrong,@user Yayayay finally yayabonye?🤣😂😂😅 Umusaza na mwumvishe agahinda kamwishe walahi,neutral,negative,negative,0.5555555555555556,2.0
+both_wrong,@user @user Ngo ukena ufite itungo rikakugoboka.,positive,negative,negative,0.6,2.0
+both_wrong,Umuntu waje musanze kureba umukino wa Mukura VS ashatse yandya akara nkamanuka nkamuramutsa dore n'ubundi ubukonje bumarwa n'ibikonje....!,neutral,negative,negative,0.35,2.0
+both_wrong,@user @user Bivuze ko icyaha cyo gutuka umwuka wera Yesu atagipfiriye?,neutral,negative,negative,0.1111111111111111,2.0
+both_wrong,@user Nawe aje kgl x🧐😣😂😂😂,neutral,negative,negative,0.0,2.0
+both_wrong,@user @user @user Yahumuye rwose. Ni ugufunga neza amagare ubu twagiye 🚴🏾🚴🏾🚴🏾🚴🏾,neutral,positive,positive,0.25,2.0
+both_wrong,@user @user Biroroshye cyane Vestine ni ukuri ni uwo utari Dorcas🤣,neutral,positive,negative,0.2222222222222222,3.0
+both_wrong,@user Ariko ngira ngo ni Imana ibahamagarira kudashaka abagore,neutral,negative,positive,0.125,2.0
+both_wrong,Gahunda yogupima covid19 mutugari 45 twomumujyi wa Kigali irakomeza uyumunsi aha nimutugari twagaragayemo ubwandu bwinshi covid19 irahari Kandi kuyirinda birashoboka @user @user #GumaMuRugo #Sindohoka #NdindaNkurinde,neutral,positive,positive,0.30434782608695654,3.0
+both_wrong,Perezida #Kagame yahaye imbabazi abagore 10 bari bafungiwe gukuramo inda https://t.co/QIM1LuIRG1,positive,neutral,neutral,0.0,2.0
+both_wrong,"Mwiriwe @user , Abantu provisional driving licence yarangiriyeho kubera ibibazo bya corona arko akaba yiyandikishije bikemera hari ikibazo tuzagira",neutral,negative,negative,0.4117647058823529,3.0
+both_wrong,"@user @user @user @user @user @user @user @user @user @user @user Uti kuba gereza zifite ubucucike ntacyo bitwaye?... ntabwo nagendeye kuri uwo mu Miss, namufashe nk'urugero, nk'uko nari gufata n'abandi.",neutral,negative,negative,0.13636363636363635,2.0
+both_wrong,@user Ndimuhanga mumurenge wa Rugendabari mbega mwiza wumugome gusa rirene yararenganye atariwe ubikora nyirabayazana Ari mwiza,negative,positive,positive,0.3333333333333333,2.0
+both_wrong,"@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user Umwe yanafata igare 🚴🏾, undi agafata iy’amaguru bagahurira hagati!🤷🏾‍♂️",neutral,negative,negative,0.3333333333333333,3.0
+both_wrong,Umuntu w'inshuti ya Bruce melody amugire inama yo kureka music 🚮🚮,negative,neutral,neutral,0.0,2.0
+both_wrong,@user @user @user @user @user @user @user @user Nta mpamvu kuko ibyo ashinjwa biracyari mu nkiko bityo rero ihame ry'ubutabera riracyamufata nk'umwere keretse niba twasimbura ubutabera.,neutral,negative,negative,0.15,2.0
+both_wrong,"#RwOT Waha iki @user irimo guha abaturage ba @user bose urukingo rwa #COVIDー19 ? Burya iyo ukungahaye mu mutwe n'ubuyobozi, uba ukize.",positive,neutral,neutral,0.15,2.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user @user Nari ngiye gushyira status kuri watsapp ivuga ko watsapp yanze gukora none byanze🙄,negative,neutral,neutral,0.15384615384615385,2.0
+both_wrong,Kera ababyeyi barambwiraga ngo nimba mukuru bazampa abakobwa babo mbarongore none banz nkicyonka😭😭😭,neutral,negative,negative,0.38461538461538464,2.0
+both_wrong,Inshuti z'agahoto ndazirambiwe N'undi ufite gahunda nagire bwangu akore #unfollow https://t.co/3xEo7QglDF,negative,positive,positive,0.3333333333333333,2.0
+both_wrong,@user @user Erega rirabatwika. Ni ugushaka uko umuntu yajya asukaho amazi y’ineza n’urukunda. Amahumbezi n’amafu yamusagarariza akagaruka ibumuntu.,positive,negative,negative,0.42105263157894735,2.0
+both_wrong,#Micro leasing; ni Gahunda igamije kongerera ubushobozi abaturage bize Imyuga bakorera mu @user @user https://t.co/38ShyqxSDt,neutral,positive,positive,0.3333333333333333,3.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user @user None se iyi myandikire nta hantu nahamwe yanditse ngo umuntu yige? Kuki ubu? Ni iki cyagukanguye @user,neutral,negative,negative,0.0625,3.0
+both_wrong,"@user Umwana yimukira umushyitsi iyo hari intebe nke, ntiyamwimukira muri stade barimo bonyine.",neutral,negative,negative,0.25,2.0
+both_wrong,"@user @user @user @user Hagize uyigobotora asigarana ubwoba bwo kugira umuyaga wo mu nda, uruvugiro akarubura da, agasa n’udafite aho aca ingando.",neutral,positive,negative,0.3684210526315789,2.0
+both_wrong,Inzoga za RCS😵😵!!?? Inzoga za RCS😵😵!!?? Inzoga za RCS😵😵!!?? Inzoga za RCS😵😵!!?? Inzoga za RCS😵😵!!?? Inzoga za RCS😵😵!!?? https://t.co/JlwKRLfNJF,neutral,negative,negative,0.3333333333333333,2.0
+both_wrong,"@user Abo bandi batuma mutisanzura, bakagukonsoma utabafite muri gahunda bataza no kugushimira, baba bakubonyemo ATM buri wese acomekamo ikarita.",negative,positive,neutral,0.4444444444444444,3.0
+both_wrong,"Imig 3:5 [5]Wiringire Uwiteka n'umutima wawe wose,We kwishingikiriza ku buhanga bwawe. https://t.co/y9OUBX84Sb",neutral,positive,positive,0.2,2.0
+both_wrong,Harya kunywa ni Iki ni ukunywa ukagenda ugwirirana. Oya rwose mureke kwiyandarika https://t.co/MNuH0GTBVv,negative,neutral,positive,0.16666666666666666,3.0
+both_wrong,@user @user Nawe singushira amakenga uroye!,negative,neutral,positive,0.5,2.0
+both_wrong,"@user @user Ikibazo ni, umuco ni iki? Ureberwa mu mibereho y'abakera cg ab'ubu?",neutral,negative,negative,0.3076923076923077,3.0
+both_wrong,ubwo urahoe urumva ntacyo ubura utarareba CALEMA - Te amo tweeps lyrics video 🔥😲💯 https://t.co/DpJG5LAPzq,neutral,negative,negative,0.5,2.0
+both_wrong,"@user @user @user Burya rudwingisha agace k’inyuma ku kabuno, iyo kavuyeho amara atangira gusohoka rugapfa kandi ntirusubira mu zindi.",neutral,negative,negative,0.47058823529411764,2.0
+both_wrong,@user @user Turi kumwe. Ni yo mpamvu umugore ajyana umwana kwa muganga kumusiramuza. Ntibigombera ko umugore aba asiramurika.,positive,negative,negative,0.25,2.0
+both_wrong,Muri #CentreAfrica ibibanza biri kugura makeya. gusa n'akabanga mbibiye...😎,positive,neutral,neutral,0.5,2.0
+both_wrong,@user Ikipe yari yarabuze abafite imyumvire nk'iyi kabisa. Umwana ahora ari umwana!,neutral,negative,positive,0.0,2.0
+both_wrong,"@user @user Umva bro njye nashakaga ko tuganira, niba uri ready twaganira mu bwubahane.",positive,neutral,neutral,0.16666666666666666,2.0
+both_wrong,@user Nawe ubanza umeze nkanjye 😂😂,neutral,negative,negative,0.0,3.0
+both_wrong,🌋Amakuru agezweho:🌋 Nuko wa munyamakuru wacu #NdahiroValensPappy yamaze kwivana mu mubare w'abafite #Inyinya hano muRwanda.😂,negative,neutral,neutral,0.1875,3.0
+both_wrong,@user Cyane. Hari n'ubwo uba uwa nyuma abatanga kubona akazi mwese,neutral,positive,positive,0.0,2.0
+both_wrong,Imyiteguro ya @user irarimbanyije I @user gahunda urubyiruko rufite ni uko impano zabo zihiga izindi mu Gihugu. @user @user @user @user @user @user @user @user @user.gahunda ni 21-22/07 not 23-24 https://t.co/7aGDVrbXz4,positive,neutral,neutral,0.08695652173913043,2.0
+both_wrong,"@user Kuba cool ntibimuhindura Bro/ man, aguma Ari uwo ari we, aguma Ari female.",neutral,negative,negative,0.38461538461538464,2.0
+both_wrong,"Arata umwanya, kuko ibye birazwi ku buryo buhagije. Amateka ye mabi n'uyo yabloka abantu bose ntiyasibangana. https://t.co/THzOZgvxd2",negative,positive,positive,0.35294117647058826,2.0
+both_wrong,@user Ntacyo itwaye ikibazo ndumva ari battery😂,neutral,negative,negative,0.0,2.0
+both_wrong,@user @user @user 😅😅 uyu munsi ntarindi shaza nareba nge,positive,neutral,neutral,0.16666666666666666,2.0
+both_wrong,@user 😂😂😂😂ni utunyangingo 100000 two mumubiri dutuma umuntu atayabona neza. Mwanafunzi said😂,neutral,negative,negative,0.5454545454545454,2.0
+both_wrong,@user @user @user Igihe cyo kuganira ku masezerano ndifuza kuhaba nka manager w’umukinnyi kuko hari amategeko menshi atazi!,positive,neutral,neutral,0.1875,2.0
+both_wrong,@user Ibaze wallah Kandi ndi kuri stade Ndaje ndakurabura mukanya,neutral,negative,positive,0.2222222222222222,3.0
+both_wrong,@user @user Uyu mudada navumbuyeko arumuhakanyi,negative,neutral,positive,0.75,2.0
+both_wrong,@user mwaramutse! Internet yanze rwose mudufashe mukemure ikibazo gihari iri kutwicira akazi murako,negative,neutral,positive,0.3333333333333333,2.0
+both_wrong,@user Ibintu uvuze uzabibwire impunzi zikubwire uko zibyumva nahonjye nabankubeshye pee😂😂,neutral,negative,negative,0.6,2.0
+both_wrong,Mabye mbahaye ⚠️ warning. Uziko Atampamagaye Ndi muri vacation ntazampamagare nitujyera kwishuri..,neutral,negative,negative,0.6363636363636364,2.0
+both_wrong,"Umusaza Ati:” Kata narazibonye baratwibye, Umusaza Ni Umujeune aba akurikiye gahunda yose 🙌🏾” https://t.co/QsR5DLo5pV",neutral,positive,positive,0.4166666666666667,2.0
+both_wrong,@user @user @user @user Mva ku izima gute Kandi ndi mu kuri??,positive,neutral,neutral,0.25,2.0
+both_wrong,@user @user Aya mata ko aryoshye 😅,positive,neutral,neutral,0.25,2.0
+both_wrong,"Dushima umuhate mushyira mukurwanya icyi cyorezo dufatanyije byose birashoboka, dore uko Rwerere sector, Ruconsho cell byaribimeze. #Ntakudohoka https://t.co/Rq9pPZbe4x https://t.co/UBEM1i3OWx",neutral,positive,positive,0.17647058823529413,2.0
+both_wrong,😂 uburyo cristiano akiryo agira mukibuga ari nako aba afite mur game nibyo bitangaje 🤌,positive,negative,negative,0.07692307692307693,2.0
+both_wrong,@user @user @user @user Ntabwo yaba atabyumva ari umunyamategeko. Ubanza ari njye utabyumva.,neutral,negative,negative,0.2222222222222222,3.0
+both_wrong,@user Hhhhhhhhhh wamuntuwe wasanga aba amurinda imibu akana yicara ngira kugirango mwokumva urusaku no kuduhira kwayo,positive,negative,negative,0.4666666666666667,2.0
+both_wrong,Ese Namwe Mubona Uburyo ibintu Bya Munyangire Byeze!?Nonese Biterwa Niki Koko!?Mwaretse Tugafashanya uko Dushoboye Ko ntawuramba nka Nyiragongoo!🙏,positive,negative,negative,0.3,
+both_wrong,@user @user Iyo myumvire yashyizwe imbere cyane mu myaka ishize yoreka benshi mu banyeshuri,neutral,positive,positive,0.25,2.0
+both_wrong,@user 😂😂😂😂😂Kuba bamuhohoteye byo nibigaragara,neutral,negative,negative,0.5,2.0
+both_wrong,@user Ndi umuvugizi wa rubanda rusange. Mbabazwa iteka n'utubahiriza inshingano mu buryo bukwiye kandi aricyo cyazimujyanyemo.,neutral,positive,positive,0.3125,2.0
+both_wrong,Aho aba bakuramo igikondo yafungishaga imbere babanje kwikingurira urugi bakoresheje imfunguzo zabo.Haracyashakishwa amakuru kugirango hamenyekane irengero ry'ibyibwe. Respectfull @user @user,neutral,negative,negative,0.5,2.0
+both_wrong,"Ngo gahunda nukurya inyotse cg Intogose 😂, bitewe n'izamukaka ry'igiciro by'#Amavuta.",neutral,negative,negative,0.38461538461538464,2.0
+both_wrong,Hanyuma muri ya gahunda yo gushyigikira #Abacu nutekereza Imyambaro ya siporo igezweho ntuzarenze ingohe #IwacuSportsWear 💙💛💚🇷🇼🇷🇼🇷🇼 Cc. @user @user https://t.co/08YLueCSCi,neutral,positive,positive,0.3125,2.0
+both_wrong,Mutsobanurire pe ubanze icyongereza cyanjye ari hafi yantacyo. Johnson&amp;johnson c na rwo ni swarara https://t.co/xdtojOBFvw,negative,neutral,neutral,0.1875,2.0
+both_wrong,Ako ngo kwa Tayc Hari hari Inana zirenze?😩,positive,negative,neutral,0.125,2.0
+both_wrong,Nubwo bamwe bafite inkovu k'umutima Abandi k'umubiri. Duhuza ibitecyerezo. Gusa iyo k'umubiri ntisibangana💕. 🇷🇼 Genocide #NeverAgain,neutral,positive,positive,0.16666666666666666,2.0
+both_wrong,@user Ni kinini Cyane ikirenge nikirekire Kbs biragoye,neutral,positive,positive,0.14285714285714285,2.0
+both_wrong,@user @user Ngabo yanyoheje ngo ntitubivuge! 😂,neutral,negative,negative,0.5,2.0
+both_wrong,"@user @user Gutera ntibirimo. Ni intanga zabo bombi! They made it, bakoranye umwana, si umwe wahaye undi inda.",neutral,negative,negative,0.0625,3.0
+both_wrong,"Twakwepye isasu rigwa kumutwe wa Manchester United 😃😃 - Kenny Sol yisanze i Manchester, njye nifatira inkuba yitwa Olek Zinny 📢📢 https://t.co/LX32nbvecZ",negative,neutral,neutral,0.5555555555555556,2.0
+both_wrong,@user @user @user @user @user @user @user @user None se ko iy'uku kwezi nayibuze nta kuntu mwabaza @user ko akunze kubimenya cyane cyane mu mpera zukwezii🤦,neutral,negative,negative,0.2777777777777778,3.0
+both_wrong,@user @user @user @user @user Hamwe na @user nawe assignment ari kuyumva nez,positive,neutral,neutral,0.14285714285714285,2.0
+both_wrong,@user @user Nta kuri yavuze pe! Ahubwo nanze ikinyabupfura gike.,positive,negative,neutral,0.0,2.0
+both_wrong,"@user na @user hamwe na @user baduh amakuru tumenye ibyiyi saison tutazongera guhinga tukarumbya, ubushize twarahiy byahatari",negative,positive,positive,0.5714285714285714,2.0
+both_wrong,Uyumunsi ndashaka umuntu unganiza nkamubwira ibibazo mfite bigashira nukuli simbure numwe ubundi mukore retweet mubone arko na like,positive,negative,neutral,0.3333333333333333,2.0
+both_wrong,"Munyemerere Tuganire kandi twungurane ubumenyi! Ikibazo cyanjye kiragira kiti """"Ese Kwicuza ni bibi Cg biterwa n'Icyo wicuza? #Philosophy #KNOWLEDGE #spirit",neutral,negative,positive,0.3333333333333333,
+both_wrong,Muraho abo bireba ??nukuri abantu twambukiranya imipaka muri congo duhangayikishijwe na #Visa muri congo badusaba kandi twumva ngo bagiye muri #EAC @user @user @user @user,neutral,negative,positive,0.19047619047619047,2.0
+both_wrong,@user True. Nka kumwe filime tuzireba tuzi ko atari true story ariko tukazireba kandi zikadusigira amasomo.,positive,neutral,neutral,0.2,2.0
+both_wrong,@user As I said amafaranga sikibazo ahubwo ikibazo naho yihishe,neutral,negative,negative,0.3333333333333333,2.0
+both_wrong,Guys nge ipirawu nabonye barigutinda negera abari mugikoni Uru tayali ambwire mubwire aho ndi😂😂😂😀😀😀😀 https://t.co/eKvTdafP22,neutral,negative,negative,0.35714285714285715,2.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user @user Babandi bose narabaretse niwe nsigaranye wenyine😕,neutral,negative,negative,0.3333333333333333,3.0
+both_wrong,…turabamenyesha ko bemerewe gusenga buri munsi bubahiriza amabwiriza yashyizweho yo kwirinda COVID-19. @user 2/2,neutral,positive,positive,0.26666666666666666,2.0
+both_wrong,Biteye ubwoba pe. Ibi biterwa no gufata ingamba nibatange igihe cyokwitegura kuzishira mubikorwa https://t.co/lTEvx80Ems,negative,neutral,positive,0.3076923076923077,2.0
+both_wrong,"@user Ko useka kdi nasabye? Simbona nahawe umwanya wo kubimubwira ndi imbere ye,none naha Koko nabura kumusaba? Ikibi Ni ugusabiriza🕵️",positive,negative,negative,0.35,2.0
+both_wrong,Umve nkubwire ibanga 😉😉 Niba ufite Crush mugurire SIM Card ya @user ngewe uzaba umbwira🥰🥰 #Mango4Gchallenge,negative,neutral,neutral,0.35714285714285715,2.0
+both_wrong,@user @user Ubu se ibintu byose dutangaza twabisabira uruhushya??🙄,neutral,negative,negative,0.14285714285714285,2.0
+both_wrong,@user @user @user @user @user @user @user @user @user @user Ewana ibyo byo imihanda izamwibuka @user,positive,neutral,neutral,0.2,2.0
+both_wrong,"@user Yeah. Gusa imirimo yo mu rugo iravuna, inatwara umwanya cyane, kuyiharira umuntu umwe uba umwishe.",negative,neutral,positive,0.3333333333333333,3.0
+both_wrong,@user @user Ikibazo bro nuko wumva ko kuba umuntu abivuze aba amurwanyije buri gihe kdi sibyo,neutral,negative,negative,0.14285714285714285,2.0
+both_wrong,Mwaramutse neza? Mfite ikibazo kijyanye na application ko abantu barigusaba kwiga bari kwishyura ariko nyuma ntibemererwe guhitamo faculty mwadufasha,negative,neutral,neutral,0.15789473684210525,2.0
+both_wrong,@user Ejo abareyo bari bishimye ngo APR bayimye penalty ngo umusifuzi yasifuye neza cyane 😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂,positive,negative,negative,0.23076923076923078,2.0
+both_wrong,"@user Banza wige kwandika wa kabwa we, mbere y'uko wadukira abo utabasha no gufungura udushumi tw'inkweto zabo.",negative,neutral,positive,0.2777777777777778,3.0
+both_wrong,umukobwa twararanye arimuri douches arikuririmba ngo ngwino urebe ibyiza by'urwanda ubuse njyeyo koko???,neutral,negative,negative,0.35714285714285715,
+both_wrong,Ntimucikwe umukino wa 1/2 w'Igikombe cy'Amahoro uhuza Rayon Sports na APR FC. Ni kuri @user mu kanya 15h00. https://t.co/3I3bYpifpg,positive,neutral,neutral,0.05,
+both_wrong,@user @user Ni nk'aho abagabo bagomba gushimisha abagore ariko abagore nta nshingano yo kwitura ineza,neutral,negative,negative,0.0,
+both_wrong,@user Umwe ariyemera undi ibibazo byamafaranga bikiyongera 🙄 yiyemera kugirango batamwaka ayo mafaranga akayabura 😂,neutral,negative,negative,0.5,
+both_wrong,@user Pizza ngew ukunda kunsema sinkunda kuyirya cyane kugirango nirinde ibyo bibazo,negative,positive,positive,0.0,2.0
+both_wrong,"Ngo iyo Imana iza kwica satani, satani yari kuba yitabye Imana #fact",neutral,negative,negative,0.0,
+both_wrong,@user Itangazamakuru urisuzumira kuri twitter se? Iyi ni page yanjye bwite sinzi niba hari uguhatira kuyirebaho.,negative,neutral,neutral,0.26666666666666666,
+both_wrong,"@user Nakwirukana umugore we uryamana nutaramukoye, kuko murumuna wanjye nabamubaza iki bamuhaye ibiryo akirira🤗🤗",neutral,negative,negative,0.5384615384615384,
+both_wrong,@user @user Njye kugeza ubu sindumva ikibazo abantu bafite pe 🤦🏾‍♀️,neutral,negative,negative,0.125,1.0
+both_wrong,"Ba Nyiribikamyo: Banyonzi, Birabujijwe gufata ku modoka Kuko biteza impanuka. Abanyonzi: https://t.co/qwI6qyNytL",negative,neutral,neutral,0.0,2.0
+both_wrong,@user @user @user Nukuri kw'Imana sinakwanga nuko nyine uriya mukobwa mbona ko atagukunda,neutral,negative,negative,0.18181818181818182,
+both_wrong,@user Mwamfasha kureba impamvu ikarita yanjye kuri bus igaragaza ko ntamafaranga ariho kandi narayashyizeho nkoresheje momo? https://t.co/BvCAUzW2l5,negative,neutral,neutral,0.2,
+both_wrong,"@user @user @user Kubera ubukeba bukomeye cyane buba hagati ya Manchester United na Liverpool, @user iyi akawunti ya Liverpool ngiye kuyiblocka @user",negative,neutral,neutral,0.23529411764705882,
+both_wrong,@user @user @user @user @user @user @user @user @user Icyorezo ntaho cyagiye. Agapfukamunwamazuru ni ngombwa igihe cyose. Ahasigaye amahirwe masa kuri Kirehe cg Gicumbi,positive,negative,negative,0.13333333333333333,
+both_wrong,Nd umunyarwanda ku mubiri n amaraso ariko nkaba Umukorinto ku mutima 😒😒😒😒 https://t.co/60swJDboSa,neutral,positive,negative,0.09090909090909091,
+both_wrong,Ikaze mu Kiganiro #HiryaNoHino twabateguriye amakuru menshi atandukanye avugwa Hirya no Hino. Kurikira #IsangoStarTv nonaha 🕜- 🕒 @user &amp; @user https://t.co/7mQPwMHVjv,positive,neutral,neutral,0.1875,
+both_wrong,@user @user @user #ugifite inzika zibyatambutse ashatse yatura icyo gisasu kuneza nahubundi ntituzemera ko aturikana nabandi #bene kumva bumvise #Amahoro y Imana #Cardinal,neutral,positive,negative,0.4,
+both_wrong,Abantu muba mwamaze gufata ibyaraye(imbecile) nukuri mufite mu nda heza ndabasuhuje Mwaramutse ariko🙋,neutral,positive,negative,0.21428571428571427,
+both_wrong,"@user aratabaza kuri uyu munsi w'intwari, kuko ari gukorerwa akarengane (ihohoterwa) n'umuyobozi wa @user, arasaba ababifitemo ububasha kumufasha akarenganurwa. https://t.co/sUL6MtAhnF",negative,positive,positive,0.0,2.0
+both_wrong,🚨AMAKURU MASHYA🚨 Inama y'Abaminisitiri yatangaje ko bitakiri itegeko kwambara agapfukamunwa. #RBAAmakuru https://t.co/dP9HCHHTpf,positive,neutral,neutral,0.08333333333333333,
+both_wrong,@user Bisaba impinduka mu myumvire y'abaturage muri rusange n'abayobozi en particulier,positive,neutral,neutral,0.0,3.0
+both_wrong,Iyi gahunda ko ntayo mberutse byagenze gute ngo nisekere🤣🤣🤣 nimubwire umunsi inyuraraho @user @user https://t.co/C7TPo3vAJB,neutral,negative,negative,0.3333333333333333,
+both_wrong,"Breaking News: Louis Rurangirwa avuze ko hari itegeko ritubahirijwe, ahagaritse kwiyamamaza. #FERWAFAElections2021 @user @user 95.3 FM https://t.co/MVTy2fsCBS",negative,neutral,neutral,0.3333333333333333,2.0
+both_wrong,@user Gus buriya ninkikibazo jyanibaza burigihe bavuga ngo bafashe inzoga zinkorano kuki batarafata fanta zinkorano 😂🤔🤔,neutral,negative,negative,0.14285714285714285,
+both_wrong,@user Hanyuma se izo ni inka muzakama!?😏😏 ariko rata nimwijyanire wenda beer muza mukanywa zagabanuka ku isoko ntizihende😂,neutral,negative,negative,0.35294117647058826,

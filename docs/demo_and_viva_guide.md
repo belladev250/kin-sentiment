@@ -51,10 +51,15 @@ Show Table 3 and `experiments.png`.
 - It was worse than the baseline.
 - Why: 31% of test words are unknown, so a third of each tweet becomes the same <unk> vector. There is also too little data to learn embeddings, and the larger model over-fit faster.
 
-**Transformers (Colab):**
-- AfroXLMR and AfriBERTa were pretrained on Kinyarwanda; mBERT was not.
-- Sub-word tokens fix the unknown-word problem.
-- Report your numbers: did African pretraining beat mBERT? Did it beat the SVM?
+**Transformers (`src/finetune_transformer.py`, Colab T4):**
+- Pipeline: tweet → light cleaning → sub-word tokenizer → 12-layer Transformer encoder → first-token vector → linear layer → 3 logits → softmax.
+- Full fine-tuning: AdamW, lr 3e-5 (5e-5 AfriBERTa), weight decay 0.01, 10% warm-up, 5 epochs, batch 32, fp16; keep the epoch with the best dev macro-F1; 3 seeds.
+- Why three models: they differ mainly in *pretraining data*, so the comparison isolates that factor.
+- Results (test macro-F1, mean of 3 seeds):
+  - T1 mBERT (no Kinyarwanda): 57.6 ± 0.7, no better than the baseline.
+  - T2 AfriBERTa: 63.3 ± 0.3.
+  - T3 AfroXLMR-base: 67.5 ± 0.7, +5.1 over the SVM; McNemar vs E6 p = 0.002.
+- Lesson: pretraining on the language matters more than size or architecture. mBERT has to learn Kinyarwanda from 3,302 tweets.
 
 ## 5. Evaluation and errors (2 min)
 **Metric choice:**
@@ -78,11 +83,18 @@ Show Table 3 and `experiments.png`.
 
 **Link to label noise:** humans disagree on the same kinds of tweets.
 
+**Transformer vs SVM (Tables 6–7, Figure 4):**
+- T3 gains most on short tweets (+15 points accuracy), code-switched tweets (+8.5) and tweets with >30% unseen words (+7).
+- T3 raises negative and positive recall, but neutral recall stays at about 53%. Neutral→negative is still the largest error.
+- Accuracy on tweets all three annotators agreed on: about 75%. On 2-vs-1 tweets: about 64%.
+- All five failure examples in the report are still wrong for T3, because they need world knowledge or consistent labels.
+
 ## 6. Live app (1.5 min)
 **How the app connects to the model:**
-- It loads the saved pipeline (`best_classical.joblib`).
-- It runs the SAME `clean()` function used in training.
-- It shows scores per class and the preprocessed text.
+- On start-up it downloads the fine-tuned T3 model from the Hugging Face Hub (`bellahug3/kin-sentiment-transformer`).
+- It runs the same `light_clean()` used in fine-tuning, then the tokenizer, the model and a softmax over 3 logits.
+- It shows the probability of each class and the cleaned text.
+- Fallback: if the Transformer can't load, it uses the saved SVM (`best_classical.joblib`).
 
 **Try inputs:**
 - A clear positive, e.g. "Murakoze cyane…".
@@ -104,6 +116,11 @@ Show Table 3 and `experiments.png`.
 - **Why `class_weight="balanced"`?** It up-weights the smaller positive class in the loss.
 - **What is the difference between LinearSVC and logistic regression?** SVC uses hinge loss and maximises the margin. LR uses log loss and gives probabilities.
 - **Why does the app softmax the SVM scores?** To show relative confidence. These are not calibrated probabilities.
+- **Why is mBERT so weak?** Kinyarwanda is not in its pretraining data, so its sub-word pieces carry no learned meaning for Kinyarwanda.
+- **Why AfroXLMR over AfriBERTa?** It is XLM-R (trained on 100 languages, including English and French) plus extra pretraining on African languages. That helps with code-switching, and it has a larger vocabulary.
+- **Why report the mean of 3 seeds but deploy one?** The mean shows how stable the method is. The deployed checkpoint is the seed with the best *dev* score, chosen without looking at test.
+- **What is a logit / what does softmax do?** Logits are the raw class scores. Softmax turns them into probabilities that sum to 1.
+- **What does warm-up do?** It raises the learning rate gradually over the first 10% of steps, so the new random head doesn't wreck the pretrained weights early on.
 - **What does bidirectional mean?** One LSTM reads left→right and another right→left, and their states are concatenated (64 + 64 = 128).
 - **How does attention work here?** Each timestep gets a score vᵀ tanh(W h_t). A softmax turns the scores into weights, and the sentence vector is the weighted sum of the states.
 - **Why early stopping, and why 3 seeds?** Early stopping prevents over-fitting. Small data makes single runs noisy, so we average over seeds.

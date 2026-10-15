@@ -1,0 +1,103 @@
+{
+  "model": "T3 AfroXLMR-base (best seed on dev, the deployed checkpoint)",
+  "test_macro_f1": 0.6678,
+  "test_acc": 0.6676,
+  "per_class": {
+    "negative": {
+      "precision": 0.6402,
+      "recall": 0.7718,
+      "f1-score": 0.6999
+    },
+    "neutral": {
+      "precision": 0.7037,
+      "recall": 0.5318,
+      "f1-score": 0.6058
+    },
+    "positive": {
+      "precision": 0.6711,
+      "recall": 0.7266,
+      "f1-score": 0.6978
+    }
+  },
+  "confusions": {
+    "neutral->negative": 117,
+    "neutral->positive": 67,
+    "negative->neutral": 49,
+    "positive->neutral": 39,
+    "positive->negative": 37,
+    "negative->positive": 32
+  },
+  "mcnemar_T3_vs_E1": {
+    "E1_right_T3_wrong": 89,
+    "E1_wrong_T3_right": 185,
+    "p_value": 0.0
+  },
+  "mcnemar_T3_vs_E6": {
+    "E6_right_T3_wrong": 99,
+    "E6_wrong_T3_right": 148,
+    "p_value": 0.002192
+  },
+  "subsets": {
+    "short (<=5 words)": {
+      "n": 74,
+      "acc_E6": 0.5676,
+      "acc_T3": 0.7162
+    },
+    "question mark": {
+      "n": 180,
+      "acc_E6": 0.5556,
+      "acc_T3": 0.6167
+    },
+    "code-switched": {
+      "n": 117,
+      "acc_E6": 0.5983,
+      "acc_T3": 0.6838
+    },
+    "contains emoji": {
+      "n": 304,
+      "acc_E6": 0.6579,
+      "acc_T3": 0.6743
+    },
+    "OOV <=10%": {
+      "n": 162,
+      "acc_E6": 0.6605,
+      "acc_T3": 0.6667
+    },
+    "OOV 10-30%": {
+      "n": 516,
+      "acc_E6": 0.6395,
+      "acc_T3": 0.6841
+    },
+    "OOV >30%": {
+      "n": 348,
+      "acc_E6": 0.5718,
+      "acc_T3": 0.6437
+    },
+    "all": {
+      "n": 1026,
+      "acc_E6": 0.6199,
+      "acc_T3": 0.6676
+    }
+  },
+  "by_annotator_agreement": {
+    "matched_test_tweets": 958,
+    "1/3": {
+      "n": 3,
+      "acc_E6": 0.3333,
+      "acc_T3": 0.6667
+    },
+    "majority (2/3)": {
+      "n": 667,
+      "acc_E6": 0.5817,
+      "acc_T3": 0.6417
+    },
+    "unanimous (3/3)": {
+      "n": 288,
+      "acc_E6": 0.7326,
+      "acc_T3": 0.75
+    }
+  },
+  "fixed_by_T3": 148,
+  "broken_by_T3": 99,
+  "both_wrong": 242
+}

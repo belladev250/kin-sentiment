@@ -2,7 +2,7 @@
 Fine-tune pretrained Transformers for Kinyarwanda tweet sentiment.
 Designed to run on a free Google Colab T4 GPU (see notebooks/finetune_transformers_colab.ipynb).
 
-Models compared (why each one - say this in the video):
+Models compared and why each one was chosen:
   T1 mBERT  (bert-base-multilingual-cased)  - 104 languages, Kinyarwanda NOT in its
      pretraining data -> tests "does generic multilingual pretraining help?"
   T2 AfriBERTa-base (castorini/afriberta_base) - pretrained from scratch on 11 African

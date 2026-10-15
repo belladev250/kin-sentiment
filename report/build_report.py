@@ -3,8 +3,8 @@ Builds the final report (report/report.docx and report/report.pdf) from the
 experiment results, so every number in the report comes straight from results/.
 
 1. Fill in report/links.json (name, GitHub, video, Space links).
-2. After running the Colab notebook, copy results/transformer_*.csv into results/
-   and re-run: the Transformer rows and discussion are added automatically.
+2. After running the Colab notebook, copy results/transformer_*.csv into results/,
+   run src/transformer_analysis.py and src/significance.py, then re-run this script.
 Run:  python report/build_report.py
 """
 import json
@@ -27,10 +27,12 @@ ce = pd.read_csv(RES / "classical_experiments.csv").set_index("id")
 ne = pd.read_csv(RES / "neural_experiments.csv").set_index("id")
 te = pd.read_csv(RES / "transformer_experiments.csv").set_index("id") if (RES / "transformer_experiments.csv").exists() else None
 es = json.load(open(RES / "error_stats.json"))
+ta = json.load(open(RES / "transformer_analysis.json")) if (RES / "transformer_analysis.json").exists() else None
 ag = json.load(open(RES / "annotator_agreement.json"))
 sg = json.load(open(RES / "significance.json"))
 BEST = es["best_model"]
 f = lambda x: f"{100 * x:.1f}"
+pv = lambda p: "p < 0.0001" if p < 0.0001 else f"p = {p:.4f}"
 
 
 def pct(x):
@@ -164,16 +166,19 @@ doc.add_paragraph()
 
 # ------------------------------------------------------------------ 1 abstract
 H("Abstract")
-abs_tf = (f" Fine-tuned African-centric Transformers were also evaluated; the best, {tb.experiment.split(' (')[0]}, reached "
-          f"{f(tb.test_macro_f1)} macro-F1{' and became the deployed model' if tf_beats else ', not exceeding the best classical model'}."
-          if have_tf else
+abs_tf = (f" Fine-tuning pretrained Transformers showed that pretraining on the target language is decisive: mBERT, which "
+          f"saw no Kinyarwanda during pretraining, reached only {f(te.loc['T1'].test_macro_f1)}, whereas the African-centric "
+          f"{tb.experiment.split(' (')[0]} reached {f(tb.test_macro_f1)} ± {f(tb.test_macro_f1_std)} (mean of three seeds), "
+          f"significantly better than the best classical model (McNemar {pv(ta['mcnemar_T3_vs_E6']['p_value'])}); it is the "
+          "deployed model."
+          if have_tf and ta else
           " Fine-tuning of pretrained African-centric Transformers (AfriBERTa, AfroXLMR) is provided as a reproducible GPU notebook.")
 P("Sentiment analysis tools rarely exist for African languages, even widely spoken ones such as Kinyarwanda. This project builds "
   "and deploys a three-way (positive / neutral / negative) sentiment classifier for Kinyarwanda tweets using the Kinyarwanda "
   "portion of the AfriSenti benchmark (Muhammad et al., 2023a), which contains 5,155 human-annotated tweets. A TF-IDF word-unigram "
   f"logistic regression baseline achieved {f(e1.test_macro_f1)} test macro-F1. Adding character n-grams, which capture the "
   f"agglutinative morphology of Kinyarwanda, raised this to {f(best.test_macro_f1)} ({BEST}, Linear SVM), a statistically "
-  f"significant improvement (McNemar p = {mc['p_value']:.4f}). BiLSTM models trained from scratch performed worse than the "
+  f"significant improvement (McNemar {pv(mc['p_value'])}). BiLSTM models trained from scratch performed worse than the "
   f"baseline ({f(nb.test_macro_f1)}), which we attribute to the {pct(0.312)} out-of-vocabulary rate and small training set."
   + abs_tf +
   f" Error analysis shows that most mistakes involve the neutral class and that human annotators themselves agreed unanimously "
@@ -199,16 +204,20 @@ P("**Objective.** The goal of this project is to build, evaluate and deploy a se
   "morphologically rich language. Specifically, we ask: (RQ1) Does a meaningful model beat a simple bag-of-words baseline? (RQ2) Do "
   "character-level features help, given Kinyarwanda morphology? (RQ3) Do neural sequence models trained from scratch help on only "
   "~3,300 training tweets? (RQ4) Does African-centric pretraining help compared with generic multilingual pretraining? (RQ5) "
-  "Which kinds of tweets remain hard, and why? **Target users** are Rwandan organisations and researchers who want to monitor "
+  "Which kinds of tweets remain hard, and why? **Choice of language and task.** Although Kinyarwanda is the national "
+  "language of Rwanda, sentiment resources for it consist mainly of the AfriSenti benchmark and a handful of shared-task systems "
+  "(Muhammad et al., 2023b). The restriction on well-resourced languages in this assignment applies to machine translation; "
+  "for text classification, no established, publicly usable Kinyarwanda sentiment tool exists, and the published shared-task "
+  "systems report leaderboard scores without a deployable interface. **Target users** are Rwandan organisations and researchers who want to monitor "
   "public sentiment in Kinyarwanda, e.g. customer feedback for a telecom or public reaction to a government announcement.")
 
 # ------------------------------------------------------------------ 3 related
 H("2. Related Work")
 P("**African-language sentiment analysis.** AfriSenti (Muhammad et al., 2023a) is the largest sentiment benchmark for African "
   "languages, with over 110,000 tweets in 14 languages annotated by native speakers, and was the basis of the SemEval-2023 Task 12 "
-  "shared task (Muhammad et al., 2023b). In the shared task, the strongest Kinyarwanda systems used pretrained Transformers: the "
-  "organisers' AfroXLMR-large baseline reached 70.6 weighted-F1 and the best Kinyarwanda team result (72.5 weighted-F1) used "
-  "KinyaBERT, a morphology-aware Kinyarwanda language model (Muhammad et al., 2023b; Nzeyimana & Niyongabo Rubungo, 2022). "
+  "shared task (Muhammad et al., 2023b). In the shared task, the strongest Kinyarwanda systems used pretrained Transformers and "
+  "scored around 72–73 weighted-F1: the top team reached 72.63, and the KINLP team ranked second of 34 with 72.50 using KinyaBERT, "
+  "a morphology-aware Kinyarwanda language model (Nzeyimana, 2023; Nzeyimana & Niyongabo Rubungo, 2022). "
   "For Kinyarwanda text classification more broadly, Niyongabo et al. (2020) released KINNEWS, a 14-class news corpus, and showed "
   "that classical models with TF-IDF features are competitive with neural models when data is limited.")
 P("**Classical vs neural text classification.** Linear models over n-gram features remain strong baselines for short-text "
@@ -291,7 +300,7 @@ table(["Existing resources used", "Implemented in this project"],
        ["Kinyarwanda stopword list (Niyongabo et al., 2020)", "Baseline, 10 classical experiments and ablations with dev-set tuning"],
        ["scikit-learn, PyTorch, Hugging Face Transformers libraries", "BiLSTM + attention model and training loop written from scratch"],
        ["Pretrained mBERT, AfriBERTa, AfroXLMR checkpoints", "Fine-tuning script, multi-seed evaluation, model selection"],
-       ["Gradio, Hugging Face Spaces", "Error analysis, significance tests, figures, web app, this report"]],
+       ["Gradio, Hugging Face Spaces and Hub", "Error analysis (incl. Transformer vs SVM), significance tests, figures, web app, this report"]],
       [8, 8.4], "Table 2. Distinction between existing resources and own implementation.")
 
 # ------------------------------------------------------------------ 6 results
@@ -308,7 +317,8 @@ for i in ne.index:
 if have_tf:
     for i in te.index:
         r = te.loc[i]
-        rows.append([i, r.experiment, f"lr {r.lr:g}", f(r.dev_macro_f1), f(r.test_acc),
+        acc = f(r.test_acc) if "test_acc" in r and pd.notna(r.test_acc) else "–"
+        rows.append([i, r.experiment, f"lr {r.lr:g}", f(r.dev_macro_f1), acc,
                      f"{f(r.test_macro_f1)} ± {f(r.test_macro_f1_std)}", f(r.test_weighted_f1)])
 bold_ids = {"E1", BEST} | ({tbest} if have_tf else set())
 table(["ID", "Approach", "Best param", "Dev M-F1", "Test Acc", "Test M-F1", "Test W-F1"], rows,
@@ -321,7 +331,7 @@ P(f"**RQ1 – baseline vs better models.** The majority-class floor (E0) scores 
   f"while the word-unigram baseline reaches {f(e1.test_macro_f1)}. The best classical model, {BEST}, improves this by "
   f"{100 * gain:.1f} points to {f(best.test_macro_f1)} (95% bootstrap CI {f(bs_ci[0])}–{f(bs_ci[1])} vs {f(b_ci[0])}–{f(b_ci[1])} "
   f"for the baseline). On the paired test predictions it fixes {mc['baseline_wrong_model_right']} baseline errors while breaking "
-  f"{mc['baseline_right_model_wrong']}, and McNemar's exact test gives p = {mc['p_value']:.4f}, so the improvement is unlikely to be chance.")
+  f"{mc['baseline_right_model_wrong']}, and McNemar's exact test gives {pv(mc['p_value'])}, so the improvement is unlikely to be chance.")
 P(f"**RQ2 – character n-grams.** Word bigrams alone barely help (E2: {f(ce.loc['E2'].test_macro_f1)}), because with only 3,302 "
   "tweets most bigrams occur once. Switching to character 2–5-grams gives the largest single jump "
   f"(E3: {f(ce.loc['E3'].test_macro_f1)}, +{100 * (ce.loc['E3'].test_macro_f1 - e1.test_macro_f1):.1f} points). This supports our "
@@ -345,26 +355,38 @@ P(f"**RQ3 – BiLSTM from scratch.** All BiLSTM variants performed **worse than 
   "epochs before over-fitting. The larger N3 over-fit fastest (best epoch 6–7). This matches the observation of Niyongabo et al. "
   "(2020) that classical models are competitive on small Kinyarwanda datasets, and shows that model complexity is not a "
   "substitute for data.")
-if have_tf:
-    t1 = te.loc["T1"].test_macro_f1 if "T1" in te.index else None
-    afr = te.drop(index=[i for i in ["T1"] if i in te.index])
-    P(f"**RQ4 – pretrained Transformers.** The best Transformer on dev, {tbest} ({tb.experiment.split(' (')[0]}), reached "
-      f"{f(tb.test_macro_f1)} ± {f(tb.test_macro_f1_std)} test macro-F1 and {f(tb.test_weighted_f1)} weighted-F1"
-      + (f", {100 * (tb.test_macro_f1 - best.test_macro_f1):+.1f} points relative to the best classical model." if True else ".")
-      + (f" mBERT, which never saw Kinyarwanda during pretraining, scored {f(t1)}, "
-         f"{'below' if t1 < afr.test_macro_f1.max() else 'comparable to'} the African-centric models "
-         f"(best {f(afr.test_macro_f1.max())}), " if t1 is not None else " ")
-      + "indicating how much pretraining on the target language matters. Sub-word tokenization and pretrained representations "
-      "remove the out-of-vocabulary problem that limited the BiLSTM. For reference, the AfriSenti AfroXLMR-large baseline reported "
-      "70.6 weighted-F1 on this test set (Muhammad et al., 2023b).")
+if have_tf and ta:
+    t1, t2, t3 = te.loc["T1"], te.loc["T2"], te.loc["T3"]
+    m6, m1 = ta["mcnemar_T3_vs_E6"], ta["mcnemar_T3_vs_E1"]
+    tci = sg["T3 (best Transformer)"]["ci95"]
+    P(f"**RQ4 – pretrained Transformers.** Pretraining data turned out to matter more than model size or architecture. "
+      f"**mBERT (T1)**, whose pretraining corpus contains no Kinyarwanda, reached only {f(t1.test_macro_f1)} ± "
+      f"{f(t1.test_macro_f1_std)} test macro-F1, no better than the TF-IDF baseline ({f(e1.test_macro_f1)}) and below the "
+      f"character n-gram models, despite having ~180M parameters. Its sub-word vocabulary splits Kinyarwanda words into "
+      "fragments that carry no learned meaning, so fine-tuning on 3,302 tweets has to learn the language almost from scratch. "
+      f"**AfriBERTa (T2)**, pretrained on African languages including Kinyarwanda, reached {f(t2.test_macro_f1)} ± "
+      f"{f(t2.test_macro_f1_std)}, slightly above the best classical model. **AfroXLMR-base (T3)**, which starts from XLM-R "
+      f"and continues pretraining on 17 African languages (MAFT), was best on both dev ({f(t3.dev_macro_f1)}) and test "
+      f"({f(t3.test_macro_f1)} ± {f(t3.test_macro_f1_std)} macro-F1, {f(t3.test_weighted_f1)} weighted-F1), "
+      f"{100 * (t3.test_macro_f1 - best.test_macro_f1):+.1f} points over {BEST}. The low standard deviations across seeds "
+      "(≤ 0.7 points) show that the ranking T3 > T2 > T1 is stable rather than a lucky seed.")
+    P(f"The deployed T3 checkpoint (the seed with the best dev score) scores {f(ta['test_macro_f1'])} macro-F1 on test "
+      f"(95% bootstrap CI {f(tci[0])}–{f(tci[1])}). On paired predictions it corrects {m6['E6_wrong_T3_right']} of {BEST}'s errors "
+      f"while introducing {m6['E6_right_T3_wrong']} new ones; McNemar's test gives {pv(m6['p_value'])} against {BEST} and "
+      f"{pv(m1['p_value'])} against the baseline, so the Transformer's advantage is statistically significant. Our "
+      f"{f(t3.test_weighted_f1)} weighted-F1 is below the ~72.5 of the best SemEval systems (Muhammad et al., 2023b; Nzeyimana, "
+      "2023), which used larger models (e.g. AfroXLMR-large), Kinyarwanda-specific pretraining (KinyaBERT) and ensembles; our "
+      "result is from a single base-size model trained for five epochs on a free GPU.")
 else:
     P("**RQ4 – pretrained Transformers.** [Run notebooks/finetune_transformers_colab.ipynb, copy results/transformer_*.csv into "
-      "results/ and rebuild this report to fill in this paragraph and the T1–T3 rows of Table 3.] For reference, the AfriSenti "
-      "AfroXLMR-large baseline reported 70.6 weighted-F1 on this test set (Muhammad et al., 2023b).")
+      "results/ and rebuild this report to fill in this paragraph and the T1–T3 rows of Table 3.]")
 
 # ------------------------------------------------------------------ 7 errors
 H("6. Error Analysis and Discussion")
-rep = (RES / "classification_report.txt").read_text().splitlines()
+P(f"We first analyse the best classical model ({BEST}), whose errors can be traced to individual n-gram features, and then "
+  "compare it with the deployed Transformer (T3) on the same test tweets (Section 6.2).")
+H(f"6.1 Classical model ({BEST})", 2)
+rep =(RES / "classification_report.txt").read_text().splitlines()
 cls = {l.split()[0]: l.split()[1:4] for l in rep if l.strip().split()[:1] and l.split()[0] in ("negative", "neutral", "positive")}
 table(["Class", "Precision", "Recall", "F1"], [[c, *[f(float(x)) for x in v]] for c, v in cls.items()],
       [4, 3, 3, 3], f"Table 4. Per-class test results for {BEST}.")
@@ -405,26 +427,76 @@ B("**Humour and emojis:** *\"…none banz nkicyonka😭😭😭\"* – gold neut
   "humorously here, but the model has learned 😭 as a negative cue.")
 B("**Religious text:** *\"Wiringire Uwiteka n'umutima wawe wose…\"* (Proverbs 3:5, \"Trust in the Lord with all your heart\") – "
   "gold neutral, predicted positive. Religious vocabulary is positive in tone, but annotators judged the verse as neutral.")
+if ta:
+    H("6.2 Transformer (T3) compared with the classical model", 2)
+    pc = ta["per_class"]
+    table(["Class", f"{BEST} P", f"{BEST} R", f"{BEST} F1", "T3 P", "T3 R", "T3 F1"],
+          [[c, *[f(float(x)) for x in cls[c]], f(pc[c]["precision"]), f(pc[c]["recall"]), f(pc[c]["f1-score"])]
+           for c in ("negative", "neutral", "positive")],
+          [2.6, 2.3, 2.3, 2.3, 2.3, 2.3, 2.3], f"Table 6. Per-class precision (P), recall (R) and F1 on test: {BEST} vs T3.")
+    tc = ta["confusions"]
+    P(f"T3 improves negative and positive F1 by about 4–6 points each, mainly through higher recall: negative→neutral errors "
+      f"fall from {conf.get('negative->neutral')} to {tc.get('negative->neutral')} and positive→neutral from "
+      f"{conf.get('positive->neutral')} to {tc.get('positive->neutral')}. In contrast, **neutral recall does not improve** "
+      f"({f(float(cls['neutral'][1]))} vs {f(pc['neutral']['recall'])}), and neutral→negative remains the single largest error "
+      f"type ({tc.get('neutral->negative')}). The Transformer is better at recognising sentiment that is expressed, but not at "
+      "deciding when a tweet that mentions a problem is nevertheless neutral, which is the distinction annotators also find hardest.")
+    figure(FIG / "confusion_matrix_T3.png", 7.5, "Figure 4. Confusion matrix of T3 (AfroXLMR-base) on the test set.")
+    sb = ta["subsets"]
+    keys = [("short (<=5 words)", "≤ 5 content words (short)"), ("question mark", "Contains a question mark"),
+            ("code-switched", "Code-switched"), ("contains emoji", "Contains emoji"), ("OOV <=10%", "OOV rate ≤ 10%"),
+            ("OOV 10-30%", "OOV rate 10–30%"), ("OOV >30%", "OOV rate > 30%"), ("all", "All test tweets")]
+    table(["Tweet property", "n", f"{BEST} acc.", "T3 acc.", "Gain"],
+          [[lab, sb[k]["n"], pct(sb[k]["acc_E6"]), pct(sb[k]["acc_T3"]), f"{100 * (sb[k]['acc_T3'] - sb[k]['acc_E6']):+.1f}"]
+           for k, lab in keys],
+          [6, 1.5, 2.6, 2.6, 2], f"Table 7. Accuracy of {BEST} and T3 on the same test subsets as Table 5.")
+    P(f"Table 7 shows where pretraining helps. The largest gains are on **short tweets** "
+      f"({100 * (sb['short (<=5 words)']['acc_T3'] - sb['short (<=5 words)']['acc_E6']):+.1f} points), where an n-gram model has "
+      f"too few features but a pretrained model already knows the meaning of each word; on tweets with **many unseen words** "
+      f"(OOV > 30%: {100 * (sb['OOV >30%']['acc_T3'] - sb['OOV >30%']['acc_E6']):+.1f}), where sub-word tokens and pretraining "
+      f"supply knowledge that 3,302 training tweets cannot; and on **code-switched** tweets "
+      f"({100 * (sb['code-switched']['acc_T3'] - sb['code-switched']['acc_E6']):+.1f}), because XLM-R was pretrained on English "
+      f"and French as well. Gains are small on tweets with emojis "
+      f"({100 * (sb['contains emoji']['acc_T3'] - sb['contains emoji']['acc_E6']):+.1f}), where emojis already gave the SVM a "
+      "strong signal, and on tweets with few unseen words, where the two models have similar information. This confirms the "
+      "diagnosis from Section 6.1: vocabulary coverage, not the classifier, was the main bottleneck.")
+    aa = ta["by_annotator_agreement"]
+    un, mj = aa["unanimous (3/3)"], aa["majority (2/3)"]
+    P(f"**Annotator agreement.** We matched {aa['matched_test_tweets']} of the 1,026 test tweets to their three individual "
+      f"annotations. On the {un['n']} tweets where all three annotators agreed, the models reach {pct(un['acc_E6'])} ({BEST}) and "
+      f"{pct(un['acc_T3'])} (T3); on the {mj['n']} tweets labelled by a 2-vs-1 majority, accuracy drops to {pct(mj['acc_E6'])} "
+      f"and {pct(mj['acc_T3'])}. Both models are therefore much more accurate where humans agree, and a large share of the "
+      "remaining errors fall on tweets whose gold label is itself disputed. Interestingly, most of T3's gain comes from the "
+      "disputed tweets, which suggests that pretraining helps the model match the majority reading of ambiguous texts.")
+    P(f"**Persistent errors.** {ta['both_wrong']} test tweets are misclassified by both models. All five failure examples listed "
+      "in Section 6.1 (negation with *ntacyo itwaye*, the mask announcement, the striker's suspension, humorous 😭 and the "
+      "Bible verse) are still misclassified by T3, in the same way as by the SVM. These are cases that require world knowledge, "
+      "pragmatic interpretation or a consistent annotation guideline rather than better word representations, so a bigger "
+      "model alone is unlikely to fix them. A typical case that T3 *does* fix is "
+      "*\"Uko abikingiza biyongera ni ko business zikomorerwa… twikingize ku bwinshi\"* (approximately \"As more people get "
+      "vaccinated, businesses reopen… let's get vaccinated in large numbers\"), gold positive: the SVM predicts neutral, "
+      "plausibly because no individually strong positive word appears, while T3 predicts positive, consistent with reading "
+      "the encouraging message of the sentence as a whole.")
 P(f"**Relation to label quality and the literature.** Many 'errors' are tweets on which humans also disagree. Only "
   f"{pct(ag['unanimous_fraction'])} of Kinyarwanda tweets received three identical labels (κ = {ag['fleiss_kappa']}), and the "
   "neutral/negative boundary in news-style tweets is exactly where annotators diverge. Thus the achievable score is well below "
-  "100%, which helps explain why even the best SemEval systems plateau around 70–72 weighted-F1 on Kinyarwanda "
-  "(Muhammad et al., 2023b). The remaining gap between our classical models and those systems is consistent with the value of "
-  "pretrained, morphology-aware representations (Nzeyimana & Niyongabo Rubungo, 2022; Alabi et al., 2022), which can supply "
-  "knowledge of words never seen in our small training set.")
+  "100%, which helps explain why even the best SemEval systems plateau around 72–73 weighted-F1 on Kinyarwanda "
+  "(Muhammad et al., 2023b). Our results agree with Alabi et al. (2022) and Ogueji et al. (2021) that pretraining on African "
+  "languages is what makes Transformers effective for them, and with Niyongabo et al. (2020) that, without such pretraining, "
+  "simple n-gram models are hard to beat on small Kinyarwanda datasets.")
 
 # ------------------------------------------------------------------ 8 deploy
 H("7. Deployment")
-dep = (f"the fine-tuned Transformer ({L['hf_model']})" if L.get("deployed_model") == "transformer"
-       else f"the best classical model ({BEST}), saved as a scikit-learn pipeline (models/best_classical.joblib, ~4 MB)")
 P(f"The system is deployed as a Gradio (Abid et al., 2019) web application hosted on Hugging Face Spaces: {L['live_system']}. "
-  f"On start-up the app loads {dep}. When a user types Kinyarwanda text, the app applies exactly the same preprocessing used in "
-  "training, runs the model, and displays the predicted label with a score for each class, together with the preprocessed text "
-  "the model actually saw (useful for explaining errors). Scores come from a softmax over the SVM decision values and are "
-  "relative confidences rather than calibrated probabilities; a low-confidence warning appears when no class exceeds 0.5. The app "
-  "can switch to a fine-tuned Transformer from the Hugging Face Hub by setting one environment variable (MODEL_ID). A lightweight "
-  "linear model was chosen for the default deployment because it runs instantly on the free CPU tier and its behaviour is easy "
-  "to explain. If the Space is asleep, the app can be run locally with `python app/app.py` (see README).")
+  f"The fine-tuned T3 model (AfroXLMR-base, ~1.1 GB) was uploaded to the Hugging Face Hub ({L['hf_model']}). On start-up the "
+  "app downloads it and loads the tokenizer and classification model on the Space's free CPU. When a user types Kinyarwanda "
+  "text, the app applies the same light cleaning used during fine-tuning (mentions, URLs, elongations), tokenizes the text "
+  "into sub-words, runs the model, and applies a softmax to the three output logits. It then displays the predicted label, the "
+  "probability of each class and the cleaned text the model actually saw (useful for explaining errors); a low-confidence "
+  "warning appears when no class exceeds 0.5. As a fallback, the app can serve "
+  f"the classical {BEST} pipeline (models/best_classical.joblib, ~4 MB): it is used automatically if the Transformer cannot be "
+  "loaded, or when the Space variable MODEL_ID is set to 'classical'. If the Space is asleep, it wakes on the first visit "
+  "(about a minute), and the app can also be run locally with `python app/app.py` (see README).")
 
 # ------------------------------------------------------------------ 9 limits
 H("8. Limitations and Future Work")
@@ -432,24 +504,35 @@ B("**Data size and label noise.** 3,302 training tweets with fair inter-annotato
   "train with soft labels from the three individual annotations, or remove highly disputed tweets from training.")
 B("**Domain.** All data are tweets from a specific period (e.g. COVID-19, CHOGM 2022, sport); performance on customer reviews, "
   "SMS or news comments is untested and likely lower.")
-B("**Model limitations.** Bag-of-n-gram models cannot handle negation scope, sarcasm or implicit sentiment. Morphology-aware "
-  "pretrained models such as KinyaBERT (Nzeyimana & Niyongabo Rubungo, 2022), larger models (AfroXLMR-large) and "
-  "further pretraining on unlabelled Kinyarwanda tweets are promising.")
+B("**Model limitations.** Neither model handles negation scope, sarcasm or sentiment that depends on world knowledge, and "
+  "the Transformer does not improve neutral recall. We fine-tuned only base-size models for five epochs with one learning "
+  "rate per model, because of free-GPU limits; a learning-rate search, AfroXLMR-large, the morphology-aware KinyaBERT "
+  "(Nzeyimana & Niyongabo Rubungo, 2022) and further pretraining on unlabelled Kinyarwanda tweets are promising next steps. "
+  "The Transformer is also harder to explain than the linear model, whose individual n-gram weights can be inspected.")
 B("**Evaluation.** A single fixed test set of 1,026 tweets gives confidence intervals of about ±3 points; cross-validation "
   "and evaluation by additional native speakers on new data would give a more reliable picture.")
-B("**Deployment.** The free hosting tier sleeps when idle, and the app does not yet log feedback from users, which could be "
-  "used to collect new labelled data.")
+B("**Deployment.** The free hosting tier sleeps when idle and loading a 1.1 GB model makes the first request slow; the app "
+  "does not yet log feedback from users, which could be used to collect new labelled data.")
 
 # ------------------------------------------------------------------ 10 concl
 H("9. Conclusion")
 P(f"This project built and deployed a Kinyarwanda tweet sentiment classifier. The best model, {overall_name}, reached "
-  f"{f(overall_f1)} macro-F1 and {f(overall_wf1)} weighted-F1, significantly above a word-level TF-IDF baseline "
-  f"({f(e1.test_macro_f1)}). The main lessons were: (1) for a morphologically rich, low-resource language, the input "
-  "representation matters more than the classifier, and character n-grams give most of the gain; (2) a more complex neural model "
-  "trained from scratch (BiLSTM with attention) did not beat the baseline, because of high out-of-vocabulary rates and little "
-  "data; (3) seemingly harmless preprocessing such as stopword removal can hurt by deleting negation; and (4) a large share of "
-  "remaining errors lie on the neutral boundary, where human annotators also disagree. Pretrained, African-centric and "
-  "morphology-aware language models, more data and better handling of label uncertainty are the clearest routes to improvement.")
+  f"{f(overall_f1)} macro-F1 and {f(overall_wf1)} weighted-F1 (mean of three seeds), significantly above both a word-level "
+  f"TF-IDF baseline ({f(e1.test_macro_f1)}) and the best classical model ({f(best.test_macro_f1)}). The main lessons were: "
+  "(1) for a morphologically rich, low-resource language, the input representation matters more than the classifier; among "
+  "classical models, character n-grams give most of the gain; (2) a more complex neural model trained from scratch (BiLSTM with "
+  "attention) did not beat the baseline, because of high out-of-vocabulary rates and little data; (3) pretraining on the target "
+  "language is decisive: the same fine-tuning procedure gave 57.6 macro-F1 with mBERT, which never saw Kinyarwanda, and 67.5 "
+  "with AfroXLMR, whose gains came mostly from short tweets and tweets with unseen words; (4) seemingly harmless preprocessing such "
+  "as stopword removal can hurt by deleting negation; and (5) a large share of remaining errors lie on the neutral/negative "
+  "boundary and on tweets where annotators disagree, which no model in this study solved. Larger and morphology-aware pretrained "
+  "models, more data and better handling of label uncertainty are the clearest routes to further improvement.")
+
+# ------------------------------------------------------------------ AI use
+H("Use of AI Tools")
+P("[EDIT THIS TO DESCRIBE YOUR OWN USE ACCURATELY] AI assistants were used to help draft parts of the code, debug the Colab "
+  "notebook and edit the text of this report. All experiments were run by the author, every result reported here was produced "
+  "by the code in the repository, and the author reviewed, tested and is responsible for all code and text.")
 
 # ------------------------------------------------------------------ 11 refs
 H("References")
@@ -465,6 +548,7 @@ refs = [
     "Joulin, A., Grave, E., Bojanowski, P., & Mikolov, T. (2017). Bag of tricks for efficient text classification. In Proceedings of EACL 2017 (pp. 427–431).",
     "Muhammad, S. H., Abdulmumin, I., Ayele, A. A., Ousidhoum, N., Adelani, D. I., Yimam, S. M., et al. (2023a). AfriSenti: A Twitter sentiment analysis benchmark for African languages. In Proceedings of EMNLP 2023. Dataset: https://github.com/afrisenti-semeval/afrisent-semeval-2023 (CC BY 4.0).",
     "Muhammad, S. H., Abdulmumin, I., Yimam, S. M., Adelani, D. I., Ahmad, I. S., Ousidhoum, N., Ayele, A., Mohammad, S. M., Beloucif, M., & Ruder, S. (2023b). SemEval-2023 Task 12: Sentiment analysis for African languages (AfriSenti-SemEval). In Proceedings of SemEval-2023. ACL.",
+    "Nzeyimana, A. (2023). KINLP at SemEval-2023 Task 12: Kinyarwanda tweet sentiment analysis. In Proceedings of SemEval-2023. ACL. arXiv:2304.12569.",
     "Niyongabo, R. A., Qu, H., Kreutzer, J., & Huang, L. (2020). KINNEWS and KIRNEWS: Benchmarking cross-lingual text classification for Kinyarwanda and Kirundi. In Proceedings of COLING 2020 (pp. 5507–5521).",
     "Nzeyimana, A., & Niyongabo Rubungo, A. (2022). KinyaBERT: A morphology-aware Kinyarwanda language model. In Proceedings of ACL 2022 (pp. 5347–5363).",
     "Ogueji, K., Zhu, Y., & Lin, J. (2021). Small data? No problem! Exploring the viability of pretrained multilingual language models for low-resourced languages. In Proceedings of the 1st Workshop on Multilingual Representation Learning (pp. 116–126).",

@@ -1,15 +1,16 @@
 """
 Gradio web app: Kinyarwanda tweet sentiment classifier.
 
-How the app connects to the ML model (say this in the video):
-  1. On start-up it loads a trained model:
-       - if env var MODEL_ID is set (e.g. "yourname/kin-sentiment-afroxlmr"), it downloads
-         the fine-tuned Transformer from the Hugging Face Hub;
-       - otherwise it loads models/best_classical.joblib (TF-IDF word+char + Linear SVM).
+How the app uses the trained models:
+  1. On start-up it tries to load the fine-tuned Transformer (T3, AfroXLMR-base) from the
+     Hugging Face Hub (MODEL_ID, default bellahug3/kin-sentiment-transformer).
+     If torch/transformers are not installed, or MODEL_ID=classical, it falls back to the
+     saved classical pipeline models/best_classical.joblib (E6: TF-IDF word+char + Linear SVM).
   2. User text -> the SAME preprocessing used in training -> model -> scores per class.
-  3. Scores are shown as a label with confidence bars.
+  3. The predicted label and the score for each class are displayed.
 
-Run locally:  python app/app.py        Deploy: Hugging Face Spaces (Gradio SDK)
+Run locally:  python app/app.py            (MODEL_ID=classical python app/app.py for the SVM)
+Deploy:       Hugging Face Spaces (Gradio SDK) - upload the files in space/
 """
 import os
 import sys
@@ -24,14 +25,22 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from preprocess import LABELS, clean, light_clean  # noqa: E402
 
-MODEL_ID = os.environ.get("MODEL_ID", "").strip()
+MODEL_ID = os.environ.get("MODEL_ID", "bellahug3/kin-sentiment-transformer").strip()
+use_transformer = MODEL_ID.lower() != "classical"
 
-if MODEL_ID:
-    import torch
-    from transformers import AutoModelForSequenceClassification, AutoTokenizer
-    tok = AutoTokenizer.from_pretrained(MODEL_ID)
-    mdl = AutoModelForSequenceClassification.from_pretrained(MODEL_ID).eval()
-    MODEL_NAME = f"Fine-tuned Transformer ({MODEL_ID})"
+if use_transformer:
+    try:
+        import torch
+        from transformers import AutoModelForSequenceClassification, AutoTokenizer
+        tok = AutoTokenizer.from_pretrained(MODEL_ID)
+        mdl = AutoModelForSequenceClassification.from_pretrained(MODEL_ID).eval()
+    except Exception as err:  # missing libraries or no internet -> use the classical model
+        print(f"Could not load {MODEL_ID} ({err}); falling back to the classical model.")
+        use_transformer = False
+
+if use_transformer:
+    MODEL_NAME = f"Fine-tuned AfroXLMR-base Transformer [T3] ({MODEL_ID})"
+    PREP = light_clean   # Transformers were trained on lightly cleaned text
 
     def scores(text):
         enc = tok(light_clean(text), return_tensors="pt", truncation=True, max_length=128)
@@ -44,6 +53,7 @@ else:
     bundle = joblib.load(path)
     pipe = bundle["pipeline"]
     MODEL_NAME = f"TF-IDF (word 1-2 + char 2-5 grams) + Linear SVM [{bundle['id']}]"
+    PREP = clean
 
     def scores(text):
         # LinearSVC has no probabilities; softmax over decision scores gives a
@@ -61,7 +71,7 @@ def classify(text):
     note = ""
     if max(s.values()) < 0.5:
         note = "Low confidence - the model is unsure (common for short or sarcastic texts)."
-    return s, f"**Prediction:** {top}  \n**Preprocessed input seen by the model:** `{clean(text)}`  \n{note}"
+    return s, f"**Prediction:** {top}  \n**Preprocessed input seen by the model:** `{PREP(text)}`  \n{note}"
 
 
 EXAMPLES = [

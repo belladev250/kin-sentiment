@@ -1,0 +1,4 @@
+id,experiment,hf_model,lr,batch,epochs,dev_macro_f1,test_macro_f1,test_macro_f1_std,test_weighted_f1
+T1,mBERT-base (no Kinyarwanda in pretraining),bert-base-multilingual-cased,3e-05,32,5,0.5724,0.5756,0.0074,0.5736
+T2,AfriBERTa-base (African-only pretraining),castorini/afriberta_base,5e-05,32,5,0.6437,0.6327,0.0026,0.6306
+T3,AfroXLMR-base (XLM-R + African MAFT),Davlan/afro-xlmr-base,3e-05,32,5,0.6874,0.6745,0.0067,0.6706

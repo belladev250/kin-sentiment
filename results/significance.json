@@ -29,5 +29,17 @@
       "baseline_wrong_model_right": 104,
       "p_value": 0.58718
     }
+  },
+  "T3 (best Transformer)": {
+    "macro_f1": 0.6678,
+    "ci95": [
+      0.6378,
+      0.6973
+    ],
+    "mcnemar_vs_baseline": {
+      "baseline_right_model_wrong": 89,
+      "baseline_wrong_model_right": 185,
+      "p_value": 0.0
+    }
   }
 }

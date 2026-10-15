@@ -1,10 +1,11 @@
 # Kinyarwanda Tweet Sentiment Classification
 
-Three-way sentiment classification (positive / neutral / negative) for **Kinyarwanda** tweets, comparing a TF-IDF baseline, classical n-gram models, BiLSTMs trained from scratch, and fine-tuned African-centric Transformers. The best model is deployed as a Gradio web app.
+Three-way sentiment classification (positive / neutral / negative) for **Kinyarwanda** tweets, comparing a TF-IDF baseline, classical n-gram models, BiLSTMs trained from scratch, and fine-tuned Transformers. The best model (fine-tuned AfroXLMR-base) is deployed as a Gradio web app.
 
 | | |
 |---|---|
-| **Live app** | https://huggingface.co/spaces/YOUR_HF_USERNAME/kin-sentiment |
+| **Live app** | https://huggingface.co/spaces/bellahug3/kin-sentiment |
+| **Fine-tuned model** | https://huggingface.co/bellahug3/kin-sentiment-transformer |
 | **Demo video** | https://YOUR-VIDEO-LINK |
 | **Report (PDF)** | [`report/report.pdf`](report/report.pdf) |
 
@@ -35,10 +36,12 @@ Findings about the data:
 | **E1** | **Baseline:** TF-IDF word unigrams + Logistic Regression | **57.9** |
 | E3 | TF-IDF char 2–5-grams + LogReg | 61.3 |
 | E4 | Word 1–2 + char 2–5 + LogReg | 62.4 |
-| **E6** | **Word 1–2 + char 2–5 + Linear SVM (deployed)** | **62.3** (McNemar vs E1, p = 0.0002) |
+| E6 | Word 1–2 + char 2–5 + Linear SVM (best classical, fallback in app) | 62.3 (McNemar vs E1, p = 0.0002) |
 | N1 | BiLSTM + max-pool (from scratch, 3 seeds) | 57.2 ± 1.5 |
 | N2 | BiLSTM + attention (3 seeds) | 56.1 ± 0.7 |
-| T1–T3 | mBERT / AfriBERTa / AfroXLMR fine-tuned | run the Colab notebook |
+| T1 | mBERT fine-tuned (no Kinyarwanda in pretraining, 3 seeds) | 57.6 ± 0.7 |
+| T2 | AfriBERTa-base fine-tuned (3 seeds) | 63.3 ± 0.3 |
+| **T3** | **AfroXLMR-base fine-tuned (3 seeds, deployed)** | **67.5 ± 0.7** (McNemar vs E6, p = 0.002) |
 
 The full table, including ablations, is in `results/*.csv` and the report.
 
@@ -46,7 +49,8 @@ Key lessons:
 1. Character n-grams give the largest gain because they capture Kinyarwanda morphology.
 2. The BiLSTM trained from scratch does *not* beat the baseline, because of the high out-of-vocabulary rate and small dataset.
 3. Removing stopwords hurts, because the stopword list contains the negator *nta*.
-4. Most errors sit on the neutral boundary, which is also where humans disagree.
+4. Pretraining on the target language is decisive: mBERT (no Kinyarwanda) is no better than the baseline, while AfroXLMR beats every other model. Its biggest gains are on short tweets (+15 points accuracy) and tweets full of unseen words (+7).
+5. Most errors of every model sit on the neutral/negative boundary, which is also where humans disagree: both models are far more accurate on tweets that all three annotators labelled the same way.
 
 ## Repository structure
 
@@ -58,6 +62,7 @@ src/bilstm.py            PyTorch BiLSTM (+attention) trained from scratch, 3 see
 src/finetune_transformer.py  fine-tune mBERT / AfriBERTa / AfroXLMR (GPU)
 src/error_analysis.py    confusion matrix, per-subset accuracy, error samples, figures
 src/significance.py      bootstrap CIs + McNemar test vs baseline
+src/transformer_analysis.py  T3 vs E6: per-class, subsets, annotator agreement, examples
 src/annotator_agreement.py   inter-annotator agreement (Fleiss' kappa)
 notebooks/finetune_transformers_colab.ipynb   one-click Colab run for the Transformers
 app/app.py               Gradio web app
@@ -75,19 +80,23 @@ python src/baselines.py            # ~1-2 min on CPU
 python src/bilstm.py               # ~3 min on CPU
 python src/annotator_agreement.py
 python src/error_analysis.py
+# Transformers (GPU): open notebooks/finetune_transformers_colab.ipynb in Colab,
+# then copy results/transformer_*.csv into results/ and run:
+python src/transformer_analysis.py
 python src/significance.py
-# Transformers (GPU): open notebooks/finetune_transformers_colab.ipynb in Colab
 python report/build_report.py      # rebuild the PDF with the latest numbers
 ```
 
 ## Run the web app
 
 ```bash
-python app/app.py                                     # uses the trained SVM
-MODEL_ID=YOUR_HF_USERNAME/kin-sentiment-transformer python app/app.py   # uses the fine-tuned Transformer
+python app/app.py                       # loads the fine-tuned Transformer from the Hugging Face Hub
+MODEL_ID=classical python app/app.py    # uses the saved Linear SVM instead (no torch needed)
 ```
 
-**Deploy:** create a Gradio Space on huggingface.co, then upload the four files in `space/`.
+If torch/transformers are not installed, the app automatically falls back to the SVM.
+
+**Deploy:** create a Gradio Space named `kin-sentiment` on huggingface.co, then upload the files in `space/` (app.py, preprocess.py, best_classical.joblib, requirements.txt, README.md).
 
 ## Acknowledgements
 
@@ -95,5 +104,6 @@ MODEL_ID=YOUR_HF_USERNAME/kin-sentiment-transformer python app/app.py   # uses t
 - **Stopword list:** KINNEWS (Niyongabo et al., 2020).
 - **Pretrained models:** mBERT, AfriBERTa (Ogueji et al., 2021) and AfroXLMR (Alabi et al., 2022).
 - **Libraries:** scikit-learn, PyTorch, Hugging Face Transformers and Gradio.
+- **AI assistance:** AI tools were used to help with parts of the code, debugging and report editing; all experiments were run and verified by the author (see the report).
 
 The full references are in the report.
