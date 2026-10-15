@@ -1,10 +1,10 @@
 # Kinyarwanda Tweet Sentiment Classification
 
-Three-way sentiment classification (positive / neutral / negative) for **Kinyarwanda** tweets, comparing a TF-IDF baseline, classical n-gram models, BiLSTMs trained from scratch, and fine-tuned Transformers. The best model (fine-tuned AfroXLMR-base) is deployed as a Gradio web app.
+Three-way sentiment classification (positive / neutral / negative) for **Kinyarwanda** tweets, comparing a TF-IDF baseline, classical n-gram models, BiLSTMs trained from scratch, and fine-tuned Transformers. The best model (fine-tuned AfroXLMR-base) is deployed as a Streamlit web app.
 
 | | |
 |---|---|
-| **Live app** | https://huggingface.co/spaces/bellahug3/kin-sentiment |
+| **Live app** | https://kin-sentiment.streamlit.app |
 | **Fine-tuned model** | https://huggingface.co/bellahug3/kin-sentiment-transformer |
 | **Demo video** | https://YOUR-VIDEO-LINK |
 | **Report (PDF)** | [`report/report.pdf`](report/report.pdf) |
@@ -65,8 +65,9 @@ src/significance.py      bootstrap CIs + McNemar test vs baseline
 src/transformer_analysis.py  T3 vs E6: per-class, subsets, annotator agreement, examples
 src/annotator_agreement.py   inter-annotator agreement (Fleiss' kappa)
 notebooks/finetune_transformers_colab.ipynb   one-click Colab run for the Transformers
-app/app.py               Gradio web app
-space/                   ready-to-upload Hugging Face Space (app + model)
+streamlit/               deployed Streamlit app (streamlit_app.py + requirements + SVM fallback)
+app/app.py               Gradio version of the app
+space/                   ready-to-upload Hugging Face Space (Gradio)
 report/build_report.py   regenerates report.docx / report.pdf from results/
 results/                 all metrics, predictions, figures
 models/                  saved models
@@ -89,14 +90,20 @@ python report/build_report.py      # rebuild the PDF with the latest numbers
 
 ## Run the web app
 
+**Deployed (Streamlit Community Cloud):** https://kin-sentiment.streamlit.app
+
 ```bash
-python app/app.py                       # loads the fine-tuned Transformer from the Hugging Face Hub
-MODEL_ID=classical python app/app.py    # uses the saved Linear SVM instead (no torch needed)
+pip install -r streamlit/requirements.txt
+streamlit run streamlit/streamlit_app.py     # choose AfroXLMR (T3) or the Linear SVM in the app
 ```
 
-If torch/transformers are not installed, the app automatically falls back to the SVM.
+The app downloads the fine-tuned model from the Hugging Face Hub (`bellahug3/kin-sentiment-transformer`) on first use.
+If it can't, it falls back to the saved SVM.
 
-**Deploy:** create a Gradio Space named `kin-sentiment` on huggingface.co, then upload the files in `space/` (app.py, preprocess.py, best_classical.joblib, requirements.txt, README.md).
+**Deploy:** on share.streamlit.io, choose *Create app → Deploy a public app from GitHub*. Pick this repository, set the main file
+to `streamlit/streamlit_app.py`, and choose Python 3.12 under *Advanced settings*.
+
+A Gradio version is also included: `python app/app.py` locally, or upload `space/` to a Hugging Face Space.
 
 ## Acknowledgements
 

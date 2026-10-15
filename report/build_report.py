@@ -487,16 +487,21 @@ P(f"**Relation to label quality and the literature.** Many 'errors' are tweets o
 
 # ------------------------------------------------------------------ 8 deploy
 H("7. Deployment")
-P(f"The system is deployed as a Gradio (Abid et al., 2019) web application hosted on Hugging Face Spaces: {L['live_system']}. "
-  f"The fine-tuned T3 model (AfroXLMR-base, ~1.1 GB) was uploaded to the Hugging Face Hub ({L['hf_model']}). On start-up the "
-  "app downloads it and loads the tokenizer and classification model on the Space's free CPU. When a user types Kinyarwanda "
-  "text, the app applies the same light cleaning used during fine-tuning (mentions, URLs, elongations), tokenizes the text "
-  "into sub-words, runs the model, and applies a softmax to the three output logits. It then displays the predicted label, the "
-  "probability of each class and the cleaned text the model actually saw (useful for explaining errors); a low-confidence "
-  "warning appears when no class exceeds 0.5. As a fallback, the app can serve "
-  f"the classical {BEST} pipeline (models/best_classical.joblib, ~4 MB): it is used automatically if the Transformer cannot be "
-  "loaded, or when the Space variable MODEL_ID is set to 'classical'. If the Space is asleep, it wakes on the first visit "
-  "(about a minute), and the app can also be run locally with `python app/app.py` (see README).")
+P(f"The system is deployed as a Streamlit (Streamlit Inc., 2024) web application on Streamlit Community Cloud: "
+  f"{L['live_system']}. The app is built directly from the GitHub repository (streamlit/streamlit_app.py). "
+  f"The fine-tuned T3 model (AfroXLMR-base, ~1.1 GB) was uploaded to the Hugging Face Hub ({L['hf_model']}); on first use "
+  "the app downloads it, loads the tokenizer and classification model, and caches them in memory so later requests are "
+  "fast. To fit the free server's memory, the weights are loaded in bfloat16, which halves memory use and can change "
+  "predicted probabilities very slightly. When a user types Kinyarwanda text, the app applies the same light cleaning used "
+  "during fine-tuning (mentions, URLs, elongations), tokenizes the text into sub-words, runs the model and applies a softmax "
+  "to the three output logits. It displays the predicted label, the probability of each class and the cleaned text the model "
+  "actually saw (useful for explaining errors); a low-confidence notice appears when no class exceeds 0.5. Users can also "
+  f"switch to the classical {BEST} pipeline (best_classical.joblib, ~4 MB), which the app also uses automatically if the "
+  "Transformer cannot be loaded; this makes it easy to compare the two models live on the same input. A Gradio (Abid et al., 2019) version of the "
+  "same app for Hugging Face Spaces is included in the repository (space/). We could not host it because of a recurring "
+  "Spaces quota error on new free accounts. If the Streamlit app is asleep, it wakes on the first visit, and it can also be "
+  "run locally (see README).")
+
 
 # ------------------------------------------------------------------ 9 limits
 H("8. Limitations and Future Work")
@@ -511,7 +516,7 @@ B("**Model limitations.** Neither model handles negation scope, sarcasm or senti
   "The Transformer is also harder to explain than the linear model, whose individual n-gram weights can be inspected.")
 B("**Evaluation.** A single fixed test set of 1,026 tweets gives confidence intervals of about ±3 points; cross-validation "
   "and evaluation by additional native speakers on new data would give a more reliable picture.")
-B("**Deployment.** The free hosting tier sleeps when idle and loading a 1.1 GB model makes the first request slow; the app "
+B("**Deployment.** The free hosting tier sleeps when idle, has limited memory (hence bfloat16) and loading a 1.1 GB model makes the first request slow; the app "
   "does not yet log feedback from users, which could be used to collect new labelled data.")
 
 # ------------------------------------------------------------------ 10 concl
@@ -539,6 +544,7 @@ H("References")
 refs = [
     "Abid, A., Abdalla, A., Abid, A., Khan, D., Alfozan, A., & Zou, J. (2019). Gradio: Hassle-free sharing and testing of ML models in the wild. arXiv:1906.02569.",
     "Alabi, J. O., Adelani, D. I., Mosbach, M., & Klakow, D. (2022). Adapting pre-trained language models to African languages via multilingual adaptive fine-tuning. In Proceedings of COLING 2022 (pp. 4336–4349).",
+    "Streamlit Inc. (2024). Streamlit: A faster way to build and share data apps [Software]. https://streamlit.io",
     "Bahdanau, D., Cho, K., & Bengio, Y. (2015). Neural machine translation by jointly learning to align and translate. In Proceedings of ICLR 2015.",
     "Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G., Guzmán, F., Grave, E., Ott, M., Zettlemoyer, L., & Stoyanov, V. (2020). Unsupervised cross-lingual representation learning at scale. In Proceedings of ACL 2020 (pp. 8440–8451).",
     "Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional Transformers for language understanding. In Proceedings of NAACL-HLT 2019 (pp. 4171–4186).",
@@ -557,7 +563,7 @@ refs = [
     "Wang, S., & Manning, C. D. (2012). Baselines and bigrams: Simple, good sentiment and topic classification. In Proceedings of ACL 2012 (pp. 90–94).",
     "Wolf, T., et al. (2020). Transformers: State-of-the-art natural language processing. In Proceedings of EMNLP 2020: System Demonstrations (pp. 38–45).",
 ]
-for r in refs:
+for r in sorted(refs):
     p = doc.add_paragraph(r); p.paragraph_format.left_indent = Cm(0.8); p.paragraph_format.first_line_indent = Cm(-0.8)
     p.runs[0].font.size = Pt(9.5)
 

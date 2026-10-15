@@ -3,7 +3,7 @@
   "course": "Machine Learning / NLP - Summative Project",
   "github": "https://github.com/belladev250/kin-sentiment",
   "video": "https://YOUR-VIDEO-LINK",
-  "live_system": "https://huggingface.co/spaces/bellahug3/kin-sentiment",
+  "live_system": "https://kin-sentiment.streamlit.app",
   "hf_model": "https://huggingface.co/bellahug3/kin-sentiment-transformer",
   "deployed_model": "transformer"
 }

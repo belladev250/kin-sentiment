@@ -1,7 +1,7 @@
 """
 Text preprocessing for Kinyarwanda tweets (AfriSenti-Kin).
 
-Design decisions (explain these in the viva):
+Design decisions:
 - '@user' mentions carry no sentiment and many tweets start with 5-10 of them,
   so we collapse them to a single USER token instead of deleting (keeps the
   "this is a reply" signal).
