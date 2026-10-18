@@ -5,12 +5,11 @@ Three-way sentiment classification (positive / neutral / negative) for **Kinyarw
 | | |
 |---|---|
 | **Live app** |https://belladev250-kin-sentiment-streamlitstreamlit-app-acw9rj.streamlit.app/|
-| **Fine-tuned model** | https://huggingface.co/bellahug3/kin-sentiment-transformer |
-| **Demo video** | https://YOUR-VIDEO-LINK |
-| **Report (PDF)** | [`report/report.pdf`](report/report.pdf) |
+| **Fine-tuned model** | https://huggingface.co/bellahug3/kin-sentiment-transformer/tree/main |
+| **Demo video** | https://youtu.be/ig_BLpp2-aw|
 
 ## Problem
-
+ 
 Almost all sentiment tools are built for English. Kinyarwanda, Rwanda's national language, has few labelled datasets and few pretrained models. It is also morphologically rich: *urakoze*, *murakoze* and *mwakoze* ("thank you") are different words sharing one stem. The target users are Rwandan organisations (telecoms, banks, media, public agencies) that want to track public opinion expressed in Kinyarwanda.
 
 ## Dataset
@@ -90,7 +89,7 @@ python report/build_report.py      # rebuild the PDF with the latest numbers
 
 ## Run the web app
 
-**Deployed (Streamlit Community Cloud):** https://kin-sentiment.streamlit.app
+**Deployed (Streamlit Community Cloud):**
 
 ```bash
 pip install -r streamlit/requirements.txt
