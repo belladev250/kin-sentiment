@@ -1,14 +1,4 @@
-"""
-Baseline + classical ML experiments for Kinyarwanda tweet sentiment.
 
-Run:  python src/baselines.py
-Outputs:
-  results/classical_experiments.csv   one row per experiment (dev + test scores)
-  models/best_classical.joblib        best pipeline (chosen on DEV macro-F1) for the web app
-
-Every model is tuned ONLY on the dev set. The test set is scored once per
-experiment and never used for choosing anything.
-"""
 import json
 import time
 from pathlib import Path
