@@ -1,11 +1,4 @@
-"""
-Evaluation figures + error analysis for the best classical model (and baseline).
 
-Run:  python src/error_analysis.py     (after baselines.py and bilstm.py)
-Outputs in results/:
-  figures/class_distribution.png, figures/experiments.png, figures/confusion_matrix.png
-  classification_report.txt, error_samples.csv, error_stats.json
-"""
 import json
 import re
 from pathlib import Path
