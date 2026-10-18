@@ -4,7 +4,7 @@ Three-way sentiment classification (positive / neutral / negative) for **Kinyarw
 
 | | |
 |---|---|
-| **Live app** | https://kin-sentiment.streamlit.app |
+| **Live app** |https://belladev250-kin-sentiment-streamlitstreamlit-app-acw9rj.streamlit.app/|
 | **Fine-tuned model** | https://huggingface.co/bellahug3/kin-sentiment-transformer |
 | **Demo video** | https://YOUR-VIDEO-LINK |
 | **Report (PDF)** | [`report/report.pdf`](report/report.pdf) |
