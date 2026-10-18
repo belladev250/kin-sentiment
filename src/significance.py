@@ -1,10 +1,4 @@
-"""
-Is the improvement over the baseline real or just noise?
-- 95% bootstrap confidence interval of test macro-F1 for each saved model
-- McNemar's test (baseline E1 vs best model) on the paired test predictions
 
-Run:  python src/significance.py
-"""
 import json
 from pathlib import Path
 
