@@ -1,17 +1,4 @@
-"""
-Gradio web app: Kinyarwanda tweet sentiment classifier.
 
-How the app uses the trained models:
-  1. On start-up it tries to load the fine-tuned Transformer (T3, AfroXLMR-base) from the
-     Hugging Face Hub (MODEL_ID, default bellahug3/kin-sentiment-transformer).
-     If torch/transformers are not installed, or MODEL_ID=classical, it falls back to the
-     saved classical pipeline models/best_classical.joblib (E6: TF-IDF word+char + Linear SVM).
-  2. User text -> the SAME preprocessing used in training -> model -> scores per class.
-  3. The predicted label and the score for each class are displayed.
-
-Run locally:  python app/app.py            (MODEL_ID=classical python app/app.py for the SVM)
-Deploy:       Hugging Face Spaces (Gradio SDK) - upload the files in space/
-"""
 import os
 import sys
 from pathlib import Path
