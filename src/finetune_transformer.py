@@ -1,24 +1,4 @@
-"""
-Fine-tune pretrained Transformers for Kinyarwanda tweet sentiment.
-Designed to run on a free Google Colab T4 GPU (see notebooks/finetune_transformers_colab.ipynb).
 
-Models compared and why each one was chosen:
-  T1 mBERT  (bert-base-multilingual-cased)  - 104 languages, Kinyarwanda NOT in its
-     pretraining data -> tests "does generic multilingual pretraining help?"
-  T2 AfriBERTa-base (castorini/afriberta_base) - pretrained from scratch on 11 African
-     languages incl. Kinyarwanda, small (~111M params), <1GB of text
-  T3 AfroXLMR-base (Davlan/afro-xlmr-base) - XLM-R adapted to 17 African languages
-     incl. Kinyarwanda via multilingual adaptive fine-tuning (MAFT)
-  T4 AfroXLMR-large (optional, --large)  - same, 560M params
-
-Input: tweet -> subword tokens (max 128) -> [CLS] representation -> linear layer -> 3 labels.
-All encoder weights are updated (full fine-tuning). Chosen on DEV macro-F1.
-
-Usage:
-  python src/finetune_transformer.py                  # T1-T3, 3 seeds each (~25 min on T4)
-  python src/finetune_transformer.py --large          # also AfroXLMR-large
-  python src/finetune_transformer.py --push-to-hub USERNAME/kin-sentiment-afroxlmr
-"""
 import argparse
 import gc
 import json
