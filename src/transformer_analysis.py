@@ -1,18 +1,4 @@
-"""
-Error analysis for the best fine-tuned Transformer (T3, AfroXLMR-base) and a
-direct comparison with the best classical model (E6).
 
-Questions answered:
-  - Per-class precision / recall / F1 and confusion matrix of T3.
-  - Is T3 significantly better than E6? (McNemar on paired predictions)
-  - On which kinds of tweets does T3 gain most? (same subsets as error_analysis.py)
-  - Does performance depend on how much the human annotators agreed?
-  - Example tweets that T3 fixes, that both models get wrong, and that T3 breaks.
-
-Run:  python src/transformer_analysis.py   (needs results/transformer_test_predictions.csv)
-Outputs: results/transformer_analysis.json, results/transformer_classification_report.txt,
-         results/transformer_examples.csv, results/figures/confusion_matrix_T3.png
-"""
 import json
 import re
 from math import comb
