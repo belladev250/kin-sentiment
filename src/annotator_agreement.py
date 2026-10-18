@@ -1,9 +1,4 @@
-"""
-Measures how much the three human annotators agreed on each Kinyarwanda tweet.
-This gives a realistic ceiling for any model (see Error Analysis section).
 
-Run:  python src/annotator_agreement.py
-"""
 import json
 from pathlib import Path
 
