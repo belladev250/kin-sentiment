@@ -1,20 +1,4 @@
-"""
-Text preprocessing for Kinyarwanda tweets (AfriSenti-Kin).
 
-Design decisions:
-- '@user' mentions carry no sentiment and many tweets start with 5-10 of them,
-  so we collapse them to a single USER token instead of deleting (keeps the
-  "this is a reply" signal).
-- URLs -> URL token.
-- Lowercasing: Kinyarwanda uses Latin script; case adds sparsity, not meaning.
-- Character elongation ("Hhhhhh", "yeeeee") is common in tweets. We cap any
-  run of the same character at 2 so "hhhhhh" and "hhhh" become the same token.
-- Emojis are KEPT and separated into their own tokens because they are one of
-  the strongest sentiment cues in tweets (we test this in an experiment).
-- We do NOT remove stopwords by default: Kinyarwanda negation is often a prefix
-  or short word (e.g. "nta", "ntabwo", "si") and dropping short words can flip
-  meaning. This is also tested as an experiment.
-"""
 import re
 from pathlib import Path
 
