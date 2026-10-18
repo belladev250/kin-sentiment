@@ -1,16 +1,4 @@
-"""
-Streamlit web app: Kinyarwanda tweet sentiment classifier (deployed on Streamlit Community Cloud).
 
-How the app uses the trained models:
-  - "AfroXLMR (T3)": the fine-tuned Transformer, downloaded once from the Hugging Face Hub
-    (bellahug3/kin-sentiment-transformer) and cached. Text -> light_clean() -> sub-word
-    tokenizer -> model -> softmax over 3 logits. To fit the free server's memory it is
-    loaded in bfloat16 (half the memory of float32; predictions can differ very slightly).
-  - "Linear SVM (E6)": the saved scikit-learn pipeline best_classical.joblib.
-    Text -> clean() -> TF-IDF word+char n-grams -> Linear SVM -> softmax over decision scores.
-
-Run locally:  streamlit run streamlit/streamlit_app.py
-"""
 from pathlib import Path
 
 import joblib
