@@ -65,8 +65,8 @@ src/transformer_analysis.py  T3 vs E6: per-class, subsets, annotator agreement, 
 src/annotator_agreement.py   inter-annotator agreement (Fleiss' kappa)
 notebooks/finetune_transformers_colab.ipynb   one-click Colab run for the Transformers
 streamlit/               deployed Streamlit app (streamlit_app.py + requirements + SVM fallback)
-app/app.py               Gradio version of the app
-space/                   ready-to-upload Hugging Face Space (Gradio)
+app/app.py               Stramlit version of the app
+space/                   ready-to-upload Hugging Face Space 
 report/build_report.py   regenerates report.docx / report.pdf from results/
 results/                 all metrics, predictions, figures
 models/                  saved models
@@ -102,14 +102,14 @@ If it can't, it falls back to the saved SVM.
 **Deploy:** on share.streamlit.io, choose *Create app → Deploy a public app from GitHub*. Pick this repository, set the main file
 to `streamlit/streamlit_app.py`, and choose Python 3.12 under *Advanced settings*.
 
-A Gradio version is also included: `python app/app.py` locally, or upload `space/` to a Hugging Face Space.
+A Stramlit version is also included: `python app/app.py` locally, or upload `space/` to a Hugging Face Space.
 
 ## Acknowledgements
 
 - **Data:** AfriSenti (Muhammad et al., 2023, CC BY 4.0).
 - **Stopword list:** KINNEWS (Niyongabo et al., 2020).
 - **Pretrained models:** mBERT, AfriBERTa (Ogueji et al., 2021) and AfroXLMR (Alabi et al., 2022).
-- **Libraries:** scikit-learn, PyTorch, Hugging Face Transformers and Gradio.
+- **Libraries:** scikit-learn, PyTorch, Hugging Face Transformers and Streamlit.
 - **AI assistance:** AI tools were used to help with parts of the code, debugging and report editing; all experiments were run and verified by the author (see the report).
 
 The full references are in the report.
