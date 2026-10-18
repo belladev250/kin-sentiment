@@ -1,19 +1,4 @@
-"""
-Neural model trained from scratch: BiLSTM (+ optional additive attention).
 
-Architecture (explain in video):
-  tokens -> Embedding(V, 100) -> dropout -> BiLSTM(hidden 64 per direction)
-         -> sentence vector:
-              * "maxpool": element-wise max over time of the 128-d states
-              * "attention": softmax(v^T tanh(W h_t)) weights, weighted sum of h_t
-         -> dropout -> Linear(128, 3) -> softmax over {negative, neutral, positive}
-
-Loss: cross-entropy. Optimizer: Adam (lr 2e-3). Early stopping on DEV macro-F1
-(patience 3). Each config is run with 3 random seeds and we report mean ± std,
-because with only ~3.3k training tweets a single run is noisy.
-
-Run:  python src/bilstm.py
-"""
 import random
 from collections import Counter
 from pathlib import Path
